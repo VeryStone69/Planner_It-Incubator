@@ -1,3 +1,5 @@
+# Hello! This repository contains my educational project, in which I applied the knowledge gained during my studies at [IT - Incubator](https://it-incubator.io/). The project is an advanced to-do list.
+
 
 # Getting Started with Create React App
 
