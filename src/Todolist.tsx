@@ -1,7 +1,9 @@
-import React, {ChangeEvent, useState, KeyboardEvent} from 'react';
+import React, {ChangeEvent} from 'react';
 import {FilterValuesType} from './App';
 import {AddItemForm} from "./AddItemForm";
 import {EditableSpan} from "./EditableSpan";
+import {Button, Checkbox, IconButton, List, ListItem, Typography} from "@mui/material";
+import {Delete} from "@mui/icons-material";
 
 export type TaskType = {
     id: string
@@ -41,12 +43,12 @@ export function Todolist(props: PropsType) {
     }
 
     return <div>
-        <h3>
+        <Typography align={"center"} variant={"h6"}>
             <EditableSpan oldTitle={props.title} callback={updateTaskTitleHandler}/>
-            <button onClick={removeTodolist}>x</button>
-        </h3>
+            <IconButton onClick={removeTodolist} size={"small"}><Delete/></IconButton>
+        </Typography>
         <AddItemForm callback={addTaskHandler}/>
-        <ul>
+        <List>
             {
                 props.tasks.map(t => {
                     const onClickHandler = () => props.removeTask(t.id, props.id)
@@ -55,24 +57,38 @@ export function Todolist(props: PropsType) {
                         props.changeTaskStatus(t.id, newIsDoneValue, props.id);
                     }
 
-                    return <li key={t.id} className={t.isDone ? "is-done" : ""}>
-                        <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
+                    return <ListItem
+                        sx={{p: "0 30px"}}
+                        key={t.id} className={t.isDone ? "is-done" : ""}>
+                        <Checkbox size={"small"} onChange={onChangeHandler} checked={t.isDone}/>
                         <EditableSpan oldTitle={t.title} callback={(newTitle) => updateTaskHandler(t.id, newTitle)}/>
-                        <button onClick={onClickHandler}>x</button>
-                    </li>
+                        <IconButton onClick={onClickHandler}><Delete/></IconButton>
+                    </ListItem>
                 })
             }
-        </ul>
+        </List>
         <div>
-            <button className={props.filter === 'all' ? "active-filter" : ""}
-                    onClick={onAllClickHandler}>All
-            </button>
-            <button className={props.filter === 'active' ? "active-filter" : ""}
-                    onClick={onActiveClickHandler}>Active
-            </button>
-            <button className={props.filter === 'completed' ? "active-filter" : ""}
-                    onClick={onCompletedClickHandler}>Completed
-            </button>
+                <Button sx={{ml: "22px"}}
+                        color={props.filter === 'all' ? "secondary" : "primary"}
+                        variant={"outlined"}
+                        size={"small"}
+                        disableElevation
+                        onClick={onAllClickHandler}>All
+                </Button>
+                <Button color={props.filter === 'active' ? "secondary" : "primary"}
+                        sx={{ml: "3px"}}
+                        variant={"outlined"}
+                        size={"small"}
+                        disableElevation
+                        onClick={onActiveClickHandler}>Active
+                </Button>
+                <Button color={props.filter === 'completed' ? "secondary" : "primary"}
+                        sx={{ml: "3px"}}
+                        variant={"outlined"}
+                        size={"small"}
+                        disableElevation
+                        onClick={onCompletedClickHandler}>Completed
+                </Button>
         </div>
     </div>
 }
