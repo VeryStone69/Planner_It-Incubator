@@ -38,7 +38,7 @@ export const AddItemForm = (props:PropsType) => {
                 sx={{mr:"3px"}}
                 variant={"outlined"}
                 size={"small"}
-                label = {"Enter task"}
+                label = {error ? error:"Please type out..."}
                 value={title}
                 onChange={onChangeHandler}
                 onKeyPress={onKeyPressHandler}
@@ -50,7 +50,6 @@ export const AddItemForm = (props:PropsType) => {
                 color = {"primary"}
                 size={"large"}
             ><AddCircleOutlineIcon/></Button>
-            {error && <div className="error-message">{error}</div>}
         </div>
     );
 };
