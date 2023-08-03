@@ -146,7 +146,7 @@ function App() {
                             <MenuIcon/>
                         </IconButton>
                         <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                            News
+                            Todolist
                         </Typography>
                         <IconButton sx={{ml: 1}} onClick={colorMode.toggleColorMode} color="inherit">
                             {theme.palette.mode === 'dark' ? <Brightness7Icon/> : <Brightness4Icon/>}
