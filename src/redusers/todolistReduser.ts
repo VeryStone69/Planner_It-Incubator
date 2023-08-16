@@ -1,6 +1,4 @@
 import {FilterValuesType, TodolistType} from "../App";
-import {v1} from "uuid";
-import {addTodolistAC} from "./taskReducer";
 
 export const TodolistReduser = (state: TodolistType[], action: TodolistReducerActionType): TodolistType[] => {
     switch (action.type) {
@@ -14,8 +12,8 @@ export const TodolistReduser = (state: TodolistType[], action: TodolistReducerAc
             const newTodo: TodolistType = {id: action.payload.todolistId, title: action.payload.title, filter: "all"};
             return [newTodo, ...state]
         }
-        case "UPDATE-TODOLIST-TITLE":{
-            const todolistId=action.payload.todolistId;
+        case "UPDATE-TODOLIST-TITLE": {
+            const todolistId = action.payload.todolistId;
             const newTitle = action.payload.newTitle
             return (state.map(el => el.id === todolistId ? {...el, title: newTitle} : el))
         }
@@ -70,6 +68,6 @@ export const updateTodolistTitleAC = (todolistId: string, newTitle: string) => {
             todolistId,
             newTitle
         }
-    }as const
+    } as const
 }
 
