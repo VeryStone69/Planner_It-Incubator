@@ -5,6 +5,8 @@ type StateType = {
     [todolistId: string]: Array<{ id: string; title: string; isDone: boolean }>;
 };
 
+//Эти тесты проверяют различные сценарии удаления задачи из состояния
+// и правильность изменения состояния после применения removeTaskAC.
 describe("removeTaskAC function", () => {
     it("should remove task from the specified todolist", () => {
         const initialTasksState: StateType = {
@@ -54,6 +56,7 @@ describe("removeTaskAC function", () => {
     });
 });
 
+//Эти тесты проверяют добавление новой задачи в разные сценарии.
 describe("addTaskAC function", () => {
     it("should add a new task to the specified todolist", () => {
         const initialTasksState: StateType = {
@@ -72,6 +75,9 @@ describe("addTaskAC function", () => {
 
 });
 
+
+//Эти тесты проверяют изменение статуса задачи в различных сценариях,
+// включая несуществующий ID задачи и несуществующий ID списка задач.
 describe("changeStatusAC function", () => {
     it("should change the status of a task in the specified todolist", () => {
         const initialTasksState: StateType = {
@@ -115,6 +121,9 @@ describe("changeStatusAC function", () => {
     });
 });
 
+
+//Эти тесты проверяют удаление списка задач и связанных с ним задач в различных сценариях,
+// включая несуществующий ID списка задач.
 describe("removeTodolistAC function", () => {
     it("should remove the specified todolist and its tasks", () => {
         const initialTasksState: StateType = {
@@ -150,6 +159,8 @@ describe("removeTodolistAC function", () => {
     });
 });
 
+
+//Эти тесты проверяют сценарии, когда указанный список задач или задача отсутствует в состоянии.
 describe("updateTaskAC function", () => {
     it("should update the specified task's title", () => {
         const initialTasksState: StateType = {
@@ -182,6 +193,9 @@ describe("updateTaskAC function", () => {
     });
 });
 
+
+//Эти тесты проверяют сценарии добавления нового списка задач и проверяют,
+// что состояние не изменится, если указанный список уже существует.
 describe("addTodolistAC function", () => {
     it("should add a new todolist with an empty task array", () => {
         const initialTasksState: StateType = {
