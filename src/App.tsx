@@ -13,7 +13,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import CssBaseline from '@mui/material/CssBaseline';
 import {
-    addTaskAC, addTodolistAC,
+    addTaskAC, addTaskForTodolistAC,
     changeStatusAC,
     removeTaskAC,
     removeTodolistAC,
@@ -87,11 +87,16 @@ function App() {
         tasksDispatch(removeTodolistAC(id))
     }
 
+
+
     const addTodoList = (title: string) => {
         const todolistId = v1();
-        todolistsDispatch(addTodoListAC(title, todolistId))
-        tasksDispatch(addTodolistAC(todolistId))
+        todolistsDispatch(addTodoListAC(title,todolistId))
+        tasksDispatch(addTaskForTodolistAC(todolistId))
     }
+
+
+
     const updateTask = (todolistId: string, taskId: string, newTitle: string) => {
         tasksDispatch(updateTaskAC(todolistId, taskId, newTitle))
     }

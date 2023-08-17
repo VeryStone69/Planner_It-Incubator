@@ -1,5 +1,6 @@
 import {TasksStateType} from "../App";
 import {v1} from "uuid";
+import {AddTodoListACType} from "./todolistReduser";
 
 export const TaskReducer = (state: TasksStateType, action: TaskReducerActionType): TasksStateType => {
     switch (action.type) {
@@ -31,8 +32,8 @@ export const TaskReducer = (state: TasksStateType, action: TaskReducerActionType
                 [todoID]: state[todoID].map(el => el.id === taskId ? {...el, title: newTitle} : el)
             }
         }
-        case "ADD-TODOLIST": {
-            return ({...state, [action.payload.todolistId]: []})
+        case "ADD-TASK-TODOLIST": {
+            return {...state, [action.payload.todolistId]: []}
         }
         default:
             return state
@@ -49,7 +50,7 @@ type TaskReducerActionType =
     | ChangeStatusACType
     | RemoveTodolistACType
     | UpdateTaskACType
-    | AddTodolistACType;
+    | AddTaskForTodolistAC
 
 //===== Типизизируем каждый action по отдельности
 type RemoveTaskACType = ReturnType<typeof removeTaskAC>
@@ -57,7 +58,7 @@ type AddTaskACType = ReturnType<typeof addTaskAC>
 type ChangeStatusACType = ReturnType<typeof changeStatusAC>
 type RemoveTodolistACType = ReturnType<typeof removeTodolistAC>
 type UpdateTaskACType = ReturnType<typeof updateTaskAC>
-type AddTodolistACType = ReturnType<typeof addTodolistAC>
+type AddTaskForTodolistAC = ReturnType<typeof addTaskForTodolistAC>
 
 //===== Пишем action
 export const removeTaskAC = (id: string, todolistId: string) => {
@@ -107,9 +108,9 @@ export const updateTaskAC = (todolistId: string, taskId: string, newTitle: strin
         }
     } as const
 }
-export const addTodolistAC = (todolistId: string) => {
+export const addTaskForTodolistAC = (todolistId: string) => {
     return {
-        type: "ADD-TODOLIST",
+        type: "ADD-TASK-TODOLIST",
         payload: {
             todolistId
         }

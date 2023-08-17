@@ -1,4 +1,12 @@
-import { TaskReducer, removeTaskAC,addTaskAC,changeStatusAC,removeTodolistAC,updateTaskAC,addTodolistAC } from "./taskReducer";
+import {
+    TaskReducer,
+    removeTaskAC,
+    addTaskAC,
+    changeStatusAC,
+    removeTodolistAC,
+    updateTaskAC,
+    addTaskForTodolistAC
+} from "./taskReducer";
 
 // Типизация состояния, аналогичная TasksStateType
 type StateType = {
@@ -76,7 +84,7 @@ describe("addTaskAC function", () => {
 });
 
 
-//Эти тесты проверяют изменение статуса задачи в различных сценариях,
+// Эти тесты проверяют изменение статуса задачи в различных сценариях,
 // включая несуществующий ID задачи и несуществующий ID списка задач.
 describe("changeStatusAC function", () => {
     it("should change the status of a task in the specified todolist", () => {
@@ -194,7 +202,7 @@ describe("updateTaskAC function", () => {
 });
 
 
-//Эти тесты проверяют сценарии добавления нового списка задач и проверяют,
+// Эти тесты проверяют сценарии добавления нового списка задач и проверяют,
 // что состояние не изменится, если указанный список уже существует.
 describe("addTodolistAC function", () => {
     it("should add a new todolist with an empty task array", () => {
@@ -202,7 +210,7 @@ describe("addTodolistAC function", () => {
             todolist1: [],
         };
 
-        const action = addTodolistAC("newTodolist");
+        const action = addTaskForTodolistAC("newTodolist");
         const newState = TaskReducer(initialTasksState, action);
 
         expect(newState).toEqual({
@@ -216,7 +224,7 @@ describe("addTodolistAC function", () => {
             todolist1: [],
         };
 
-        const action = addTodolistAC("todolist1");
+        const action = addTaskForTodolistAC("todolist1");
         const newState = TaskReducer(initialTasksState, action);
 
         expect(newState).toEqual(initialTasksState);
