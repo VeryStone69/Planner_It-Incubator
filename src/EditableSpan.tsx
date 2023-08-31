@@ -6,7 +6,7 @@ type EditableSpanPropsType = {
     callback: (newTitle:string)=>void
 }
 export const EditableSpan = (props:EditableSpanPropsType) => {
-    console.log(props.callback)
+
 
     const [edit, setEdit]=useState<boolean>(false)
     const [newTitle,setNewTitle]=useState<string>(props.oldTitle)
