@@ -1,6 +1,6 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import './App.css';
-import {TaskType, Todolist} from './Todolist';
+import {TaskTodolistComponentType, Todolist} from './Todolist';
 import {AddItemForm} from "./AddItemForm";
 import {AppBar, Container, createTheme, IconButton, ThemeProvider, Typography} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
@@ -11,30 +11,32 @@ import Paper from '@mui/material/Paper';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import CssBaseline from '@mui/material/CssBaseline';
-import {addTodolistAC} from "./redusers/todolistReduser";
-import {useDispatch, useSelector} from "react-redux";
-import {AppRootStateType} from "./state/store";
+import {addTodolistAC,getTodosTC} from "./redusers/todolistReduser";
+import {useAppDispatch, useAppSelector} from "./state/store";
 
 export type FilterValuesType = "all" | "active" | "completed";
-export type TodolistType = {
+export type TodolistFromAppType = {
     id: string
     title: string
     filter: FilterValuesType
 }
 export type TasksStateType = {
-    [key: string]: Array<TaskType>
+    [key: string]: Array<TaskTodolistComponentType>
 }
 
 
-function App() {
+export const App = ()=> {
 
-    const todolists = useSelector<AppRootStateType, Array<TodolistType>>(state => state.todolists)
-    const dispatch = useDispatch();
+    useEffect(()=>{
+        dispatch(getTodosTC())
+    },[])
 
-    const addTodolist = (title: string) => {
-        const action = addTodolistAC(title);
-        dispatch(action);
-    }
+    const todolists = useAppSelector<Array<TodolistFromAppType>>(state => state.todolists)
+    const dispatch = useAppDispatch();
+
+    const addTodolist = useCallback((title: string) => {
+        dispatch(addTodolistAC(title));
+    },[dispatch])
 
 
     const [mode, setMode] = React.useState<'light' | 'dark'>('light');
@@ -56,6 +58,8 @@ function App() {
             }),
         [mode],
     );
+
+
     return (<ThemeProvider theme={theme}>
             <CssBaseline/>
             <div className="App">
@@ -102,4 +106,4 @@ function App() {
     );
 }
 
-export default App;
+
