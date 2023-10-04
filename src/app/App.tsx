@@ -12,11 +12,35 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { Menu } from '@mui/icons-material';
+import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 
 function App() {
 
+    const [mode, setMode] = React.useState<'light' | 'dark'>('light');
+    const colorMode = React.useMemo(
+        () => ({
+            toggleColorMode: () => {
+                setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+            },
+        }),
+        [],
+    );
+
+    const theme = React.useMemo(
+        () =>
+            createTheme({
+                palette: {
+                    mode,
+                },
+            }),
+        [mode],
+    );
     return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline/>
         <div className="App">
             <AppBar position="static">
                 <Toolbar>
@@ -24,15 +48,19 @@ function App() {
                         <Menu/>
                     </IconButton>
                     <Typography variant="h6">
-                        News
+                        Todolist
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <IconButton sx={{ml: 1}} onClick={colorMode.toggleColorMode} color="inherit">
+                        {theme.palette.mode === 'dark' ? <Brightness7Icon/> : <Brightness4Icon/>}
+                    </IconButton>
+                    {/*<Button color="inherit">Login</Button>*/}
                 </Toolbar>
             </AppBar>
             <Container fixed>
                 <TodolistsList/>
             </Container>
         </div>
+        </ThemeProvider>
     )
 }
 
