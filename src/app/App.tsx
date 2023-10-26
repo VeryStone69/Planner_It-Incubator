@@ -12,13 +12,17 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { Menu } from '@mui/icons-material';
-import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
+import {createTheme, CssBaseline, LinearProgress, ThemeProvider} from "@mui/material";
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import {useSelector} from "react-redux";
+import {AppRootStateType} from "./store";
+import {RequestStatusType} from "./app-reducer";
 
 
 function App() {
-
+    const status = useSelector<AppRootStateType,RequestStatusType>(state => state.app.status)
+    console.log(status)
     const [mode, setMode] = React.useState<'light' | 'dark'>('light');
     const colorMode = React.useMemo(
         () => ({
@@ -55,6 +59,7 @@ function App() {
                     </IconButton>
                     {/*<Button color="inherit">Login</Button>*/}
                 </Toolbar>
+                {status === "loading"? <LinearProgress/> : ""}
             </AppBar>
             <Container fixed>
                 <TodolistsList/>
