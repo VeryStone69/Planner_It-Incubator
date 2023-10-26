@@ -6,7 +6,7 @@ type ActionsType = SetAppStatusType | SetAppErrorType
 
 const initialState = {
     status: 'loading' as RequestStatusType,
-    error: "OIIINbKA" as null | string
+    error: "Error message" as null | string
 }
 
 type InitialStateType = typeof initialState
