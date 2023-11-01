@@ -18,6 +18,9 @@ import {useSelector} from "react-redux";
 import {AppRootStateType} from "./store";
 import {RequestStatusType} from "./app-reducer";
 import {ErrorSnackbar} from "../components/ErrorSnackbar/ErrorSnackbar";
+import Button from "@mui/material/Button";
+import {Navigate, Route, Routes} from "react-router-dom";
+import {Login} from "../features/Login/Login";
 
 
 function App() {
@@ -58,12 +61,17 @@ function App() {
                     <IconButton sx={{ml: 1}} onClick={colorMode.toggleColorMode} color="inherit">
                         {theme.palette.mode === 'dark' ? <Brightness7Icon/> : <Brightness4Icon/>}
                     </IconButton>
-                    {/*<Button color="inherit">Login</Button>*/}
+                    <Button color="inherit">Login</Button>
                 </Toolbar>
                 {status === "loading"? <LinearProgress/> : ""}
             </AppBar>
             <Container fixed>
-                <TodolistsList/>
+                <Routes>
+                    <Route path="/404" element={<h1>404: Page NOT FOUND</h1>}/>
+                    <Route path="/*" element={<Navigate to="/404"/>}/>
+                    <Route path="/" element={<TodolistsList/>}/>
+                    <Route path="/login" element={<Login/>}/>
+                </Routes>
             </Container>
         </div>
         </ThemeProvider>
