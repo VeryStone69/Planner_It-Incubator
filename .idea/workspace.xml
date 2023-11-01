@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="create: component Login.tsx">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: Formik: form,resetForm, getFieldProps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,7 @@
       <workItem from="1696405939866" duration="15767000" />
       <workItem from="1698300792384" duration="11559000" />
       <workItem from="1698320339005" duration="900000" />
-      <workItem from="1698868331662" duration="1323000" />
+      <workItem from="1698868331662" duration="2184000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -277,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698870954310</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add: routing, 404, login page">
+      <option name="closed" value="true" />
+      <created>1698871511047</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1698871511047</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +308,9 @@
     <MESSAGE value="add: error display" />
     <MESSAGE value="add: error handling" />
     <MESSAGE value="create: component Login.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="create: component Login.tsx" />
+    <MESSAGE value="add: routing, 404, login page" />
+    <MESSAGE value="add: Formik: form,resetForm, getFieldProps" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: Formik: form,resetForm, getFieldProps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

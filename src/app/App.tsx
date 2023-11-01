@@ -25,7 +25,7 @@ import {Login} from "../features/Login/Login";
 
 function App() {
     const status = useSelector<AppRootStateType,RequestStatusType>(state => state.app.status)
-    console.log(status)
+
     const [mode, setMode] = React.useState<'light' | 'dark'>('light');
     const colorMode = React.useMemo(
         () => ({
@@ -33,8 +33,7 @@ function App() {
                 setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
             },
         }),
-        [],
-    );
+        [],);
 
     const theme = React.useMemo(
         () =>
