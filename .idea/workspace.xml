@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: Formik: form,resetForm, getFieldProps">
-      <change afterPath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: Auth flow: login,authme,logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +138,8 @@
       <workItem from="1696405939866" duration="15767000" />
       <workItem from="1698300792384" duration="11559000" />
       <workItem from="1698320339005" duration="900000" />
-      <workItem from="1698868331662" duration="4244000" />
+      <workItem from="1698868331662" duration="4940000" />
+      <workItem from="1698914505529" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -298,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698872135945</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add: Auth flow: login,authme,logout">
+      <option name="closed" value="true" />
+      <created>1698908431402</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1698908431402</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +326,8 @@
     <MESSAGE value="create: component Login.tsx" />
     <MESSAGE value="add: routing, 404, login page" />
     <MESSAGE value="add: Formik: form,resetForm, getFieldProps" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: Formik: form,resetForm, getFieldProps" />
+    <MESSAGE value="add: Auth flow: login,authme,logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: Auth flow: login,authme,logout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
