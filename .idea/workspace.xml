@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: Auth flow: login,authme,logout">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="fix: loading todolists, deleting todolists when exiting the application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +144,8 @@
       <workItem from="1698300792384" duration="11559000" />
       <workItem from="1698320339005" duration="900000" />
       <workItem from="1698868331662" duration="4940000" />
-      <workItem from="1698914505529" duration="45000" />
+      <workItem from="1698914505529" duration="121000" />
+      <workItem from="1698942593062" duration="1318000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -301,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698908431402</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add: disabled button for login">
+      <option name="closed" value="true" />
+      <created>1698914616244</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1698914616244</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +341,9 @@
     <MESSAGE value="add: routing, 404, login page" />
     <MESSAGE value="add: Formik: form,resetForm, getFieldProps" />
     <MESSAGE value="add: Auth flow: login,authme,logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: Auth flow: login,authme,logout" />
+    <MESSAGE value="add: disabled button for login" />
+    <MESSAGE value="fix: loading todolists, deleting todolists when exiting the application" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: loading todolists, deleting todolists when exiting the application" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
