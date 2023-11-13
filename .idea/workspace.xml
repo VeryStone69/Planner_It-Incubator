@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="fix: loading todolists, deleting todolists when exiting the application">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: type AppThunk in store, update: auth-reducer.ts to RTK">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +151,7 @@
       <workItem from="1699544597842" duration="5000" />
       <workItem from="1699807364877" duration="40000" />
       <workItem from="1699807636193" duration="8000" />
-      <workItem from="1699813517051" duration="2603000" />
+      <workItem from="1699813517051" duration="4022000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -331,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698943952997</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add: redux toolkit; update: store.ts, default errors message">
+      <option name="closed" value="true" />
+      <created>1699901840242</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1699901840242</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +365,10 @@
     <MESSAGE value="add: Auth flow: login,authme,logout" />
     <MESSAGE value="add: disabled button for login" />
     <MESSAGE value="fix: loading todolists, deleting todolists when exiting the application" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: loading todolists, deleting todolists when exiting the application" />
+    <MESSAGE value="add: redux toolkit; update: store.ts" />
+    <MESSAGE value="add: redux toolkit; update: store.ts, default errors message" />
+    <MESSAGE value="add: type AppThunk in store, update: auth-reducer.ts to RTK" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: type AppThunk in store, update: auth-reducer.ts to RTK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
