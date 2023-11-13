@@ -5,6 +5,7 @@ import thunkMiddleware, {ThunkDispatch} from 'redux-thunk'
 import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
 import {appReducer} from "./app-reducer";
 import {authReducer} from "../features/Login/auth-reducer";
+import {configureStore} from "@reduxjs/toolkit";
 
 // объединяя reducer-ы с помощью combineReducers,
 // мы задаём структуру нашего единственного объекта-состояния
@@ -14,10 +15,13 @@ const rootReducer = combineReducers({
     app: appReducer,
     authReducer: authReducer
 })
-// непосредственно создаём store
-export const store = legacy_createStore(rootReducer, applyMiddleware(thunkMiddleware));
-// определить автоматически тип всего объекта состояния
-export type AppRootStateType = ReturnType<typeof rootReducer>
+export const store = configureStore({
+    reducer:rootReducer,
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().prepend(thunkMiddleware)
+})
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type AppRootStateType = ReturnType<typeof store.getState>
+
 // создаем тип диспатча который принимает как AC так и TC
 export type AppThunkDispatch = ThunkDispatch<AppRootStateType, any, AnyAction>
 
