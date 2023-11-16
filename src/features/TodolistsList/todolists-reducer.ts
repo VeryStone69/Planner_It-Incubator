@@ -4,8 +4,7 @@ import {handleServerAppError, handleServerNetworkError} from "../../utils/error-
 import {AppThunk} from "../../app/store";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
-const initialState: Array<TodolistDomainType> = []
-//
+
 enum RESULT_CODE_TODOLISTS_REDUSER {
     SUCCUES,
     FAILED,
@@ -41,9 +40,9 @@ const slice = createSlice({
                 state.push({...tl, filter: 'all', entityStatus: 'idle'})
             })
         },
-        // clearTodosData:(state, action:PayloadAction)=>{
-        //     return initialState;
-        // }
+         clearTodosData:(state, action:PayloadAction)=>{
+             return [];
+         }
 
     }
 })

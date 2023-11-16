@@ -3,6 +3,7 @@ import {authAPI, LoginDataType} from "../../api/todolists-api";
 import {handleServerAppError, handleServerNetworkError} from "../../utils/error-utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {AppThunk} from "../../app/store";
+import {todolistsActions} from "../TodolistsList/todolists-reducer";
 
 
 const slice = createSlice({
@@ -63,7 +64,7 @@ export const logoutTC = (): AppThunk  => async (dispatch) => {
                 dispatch(authAction.setIsLoggedIn({ isLoggedIn: false }))
                 dispatch(appActions.setAppStatus({status:'succeeded'}))
                 // dispatch(clearTodosDataAC())
-                // dispatch(todolistsActions.clearTodosData())
+                dispatch(todolistsActions.clearTodosData())
             } else {
                 handleServerAppError(res.data, dispatch)
             }

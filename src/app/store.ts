@@ -7,8 +7,6 @@ import {appReducer} from "./app-reducer";
 import {authReducer} from "../features/Login/auth-reducer";
 import {configureStore} from "@reduxjs/toolkit";
 
-// объединяя reducer-ы с помощью combineReducers,
-// мы задаём структуру нашего единственного объекта-состояния
 const rootReducer = combineReducers({
     tasks: tasksReducer,
     todolists: todolistsReducer,
@@ -16,14 +14,10 @@ const rootReducer = combineReducers({
     authReducer: authReducer
 })
 export const store = configureStore({reducer:rootReducer})
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type AppRootStateType = ReturnType<typeof store.getState>
 
-// создаем тип диспатча который принимает как AC так и TC
-// export type AppThunkDispatch = ThunkDispatch<AppRootStateType, any, AnyAction>
 export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppRootStateType, unknown, AnyAction>
 
-// export const useAppDispatch = () => useDispatch<AppThunkDispatch>();
 export type AppDispatch = ThunkDispatch<AppRootStateType, unknown, AnyAction>
 export const useAppDispatch =  () => useDispatch<AppDispatch>()
 export const useAppSelector: TypedUseSelectorHook<AppRootStateType> = useSelector

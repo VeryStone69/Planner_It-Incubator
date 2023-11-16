@@ -12,19 +12,24 @@ import {addTaskTC, removeTaskTC, TasksStateType, updateTaskTC} from './tasks-red
 import {TaskStatuses} from '../../api/todolists-api'
 import {AddItemForm} from '../../components/AddItemForm/AddItemForm'
 import {Todolist} from './Todolist/Todolist'
-
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import {Navigate} from "react-router-dom";
+import {
+    tasksSelector,
+    todolistsSelector,
+    isLoggedInTodolistsListSelector
+} from "./Todolist/todolists.selector";
 
 export const TodolistsList: React.FC = () => {
-    const isLoggedIn = useAppSelector<boolean>(state => state.authReducer.isLoggedIn)
-    const todolists = useAppSelector<Array<TodolistDomainType>>(state => state.todolists)
-    const tasks = useAppSelector<TasksStateType>(state => state.tasks)
-    const dispatch = useAppDispatch()
 
+    const isLoggedIn = useAppSelector<boolean>(isLoggedInTodolistsListSelector)
+    const todolists = useAppSelector<Array<TodolistDomainType>>(todolistsSelector)
+    const tasks = useAppSelector<TasksStateType>(tasksSelector)
+    const dispatch = useAppDispatch()
+    console.log("TodolistsList RENDER")
     useEffect(() => {
-        if (!isLoggedIn){
+        if (!isLoggedIn) {
             return;
         }
         const thunk = fetchTodolistsTC()

@@ -6,8 +6,6 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { todolistsActions } from "./todolists-reducer";
 
 
-const initialState: TasksStateType = {}
-
 const slice = createSlice({
         name: "tasks",
         initialState: {} as TasksStateType,
@@ -59,7 +57,6 @@ export const fetchTasksTC = (todolistId: string): AppThunk => (dispatch) => {
     dispatch(appActions.setAppStatus({ status: "loading" }))
     todolistsAPI.getTasks(todolistId)
         .then((res) => {
-            console.log(res)
             const tasks = res.data.items
             dispatch(tasksActions.setTasks({ tasks, todolistId }))
             dispatch(appActions.setAppStatus({ status: "succeeded" }))
