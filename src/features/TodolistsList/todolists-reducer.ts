@@ -3,6 +3,7 @@ import {appActions, RequestStatusType} from "../../app/app-reducer";
 import {handleServerAppError, handleServerNetworkError} from "../../utils/error-utils";
 import {AppThunk} from "../../app/store";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
 
 
 enum RESULT_CODE_TODOLISTS_REDUSER {
@@ -40,11 +41,15 @@ const slice = createSlice({
                 state.push({...tl, filter: 'all', entityStatus: 'idle'})
             })
         },
-         clearTodosData:(state, action:PayloadAction)=>{
-             return [];
-         }
 
+    },
+    extraReducers:builder => {
+        builder
+            .addCase(clearTodolistsAndTasks,()=>{
+                return [];
+            })
     }
+
 })
 export const todolistsReducer = slice.reducer
 export const todolistsActions = slice.actions
@@ -74,7 +79,6 @@ export const removeTodolistTC = (id: string): AppThunk => {
         todolistsAPI.deleteTodolist(id)
             .then((res) => {
                 dispatch(todolistsActions.removeTodolist({ id }))
-                //скажем глобально приложению, что асинхронная операция завершена
                 dispatch(appActions.setAppStatus({ status: "succeeded" }))
             })
     }

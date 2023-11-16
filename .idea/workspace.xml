@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: all selectors into separate files">
-      <change afterPath="$PROJECT_DIR$/src/app/app.selector.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ErrorSnackbar/error.selector.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Login/login.selector.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/todolists.selector.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/actions/common.actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ErrorSnackbar/ErrorSnackbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
     </list>
@@ -164,7 +156,7 @@
       <workItem from="1699544597842" duration="5000" />
       <workItem from="1699807364877" duration="40000" />
       <workItem from="1699807636193" duration="8000" />
-      <workItem from="1699813517051" duration="29342000" />
+      <workItem from="1699813517051" duration="31827000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -374,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700138335764</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update: all selectors into separate files">
+      <option name="closed" value="true" />
+      <created>1700152881501</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1700152881501</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,15 +458,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/Login/auth-reducer.ts</url>
-          <line>64</line>
+          <line>65</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts</url>
-          <line>42</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app/App.tsx</url>
