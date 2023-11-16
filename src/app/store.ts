@@ -1,7 +1,7 @@
 import {tasksReducer} from '../features/TodolistsList/tasks-reducer';
 import {todolistsReducer} from '../features/TodolistsList/todolists-reducer';
 import {AnyAction,combineReducers} from 'redux'
-import thunkMiddleware, {ThunkAction, ThunkDispatch} from 'redux-thunk'
+import {ThunkAction, ThunkDispatch} from 'redux-thunk'
 import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
 import {appReducer} from "./app-reducer";
 import {authReducer} from "../features/Login/auth-reducer";
@@ -15,18 +15,17 @@ const rootReducer = combineReducers({
     app: appReducer,
     authReducer: authReducer
 })
-export const store = configureStore({
-    reducer:rootReducer,
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().prepend(thunkMiddleware)
-})
+export const store = configureStore({reducer:rootReducer})
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type AppRootStateType = ReturnType<typeof store.getState>
 
 // создаем тип диспатча который принимает как AC так и TC
-export type AppThunkDispatch = ThunkDispatch<AppRootStateType, any, AnyAction>
+// export type AppThunkDispatch = ThunkDispatch<AppRootStateType, any, AnyAction>
 export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppRootStateType, unknown, AnyAction>
 
-export const useAppDispatch = () => useDispatch<AppThunkDispatch>();
+// export const useAppDispatch = () => useDispatch<AppThunkDispatch>();
+export type AppDispatch = ThunkDispatch<AppRootStateType, unknown, AnyAction>
+export const useAppDispatch =  () => useDispatch<AppDispatch>()
 export const useAppSelector: TypedUseSelectorHook<AppRootStateType> = useSelector
 
 
