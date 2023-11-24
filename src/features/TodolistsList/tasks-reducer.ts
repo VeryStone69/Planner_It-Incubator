@@ -8,11 +8,11 @@ import {
 } from '../../api/todolists-api'
 import {AppThunk} from '../../app/store'
 import {appActions} from "../../app/app-reducer";
-import {handleServerAppError, handleServerNetworkError} from "../../utils/error-utils";
+import {handleServerAppError, handleServerNetworkError} from "../../common/utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit"
 import {todolistsActions} from "./todolists-reducer";
 import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
-import {createAppAsyncThunk} from "../../utils/create-app-async-thunk";
+import {createAppAsyncThunk} from "../../common/utils/create-app-async-thunk";
 
 
 const slice = createSlice({

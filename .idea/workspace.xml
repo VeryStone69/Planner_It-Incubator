@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: refactoring error handling files">
+      <change afterPath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/utils/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/create-app-async-thunk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/create-app-async-thunk.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/error-utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +63,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\common" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -158,7 +165,7 @@
       <workItem from="1699813517051" duration="32686000" />
       <workItem from="1700238837017" duration="31000" />
       <workItem from="1700238964221" duration="770000" />
-      <workItem from="1700680686833" duration="11993000" />
+      <workItem from="1700680686833" duration="12617000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -400,14 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700846132126</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx">
+      <option name="closed" value="true" />
+      <created>1700853791596</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1700853791596</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: redux,useCallback; update: unit tests" />
     <MESSAGE value="update: typing action in: todolistReduser.ts, taskReducer.ts" />
     <MESSAGE value="update: refactoring" />
     <MESSAGE value="add: thunk creator for getTodolists,remove TDs, addTasks" />
@@ -432,7 +446,8 @@
     <MESSAGE value="update: fetchTasks in task-reducer, add: create-app-async-thunk.ts" />
     <MESSAGE value="update: addTask in task-reducer, update: addTask in TodolistsList.tsx" />
     <MESSAGE value="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx" />
+    <MESSAGE value="update: refactoring error handling files" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: refactoring error handling files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -484,7 +499,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/Login/auth-reducer.ts</url>
-          <line>65</line>
+          <line>64</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -525,12 +540,6 @@
           <line>80</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/utils/error-utils.ts</url>
-          <line>15</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx</url>
