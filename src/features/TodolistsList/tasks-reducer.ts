@@ -3,10 +3,10 @@ import {
     TaskPriorities,
     TaskStatuses,
     TaskType,
-    todolistsAPI,
+    todolistsAPI, UpdateTaskArgType,
     UpdateTaskModelType
 } from '../../api/todolists-api'
-import {AppRootStateType, AppThunk} from '../../app/store'
+import {AppThunk} from '../../app/store'
 import {appActions} from "../../app/app-reducer";
 import {handleServerAppError, handleServerNetworkError} from "../../utils/error-utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit"
@@ -41,12 +41,20 @@ const slice = createSlice({
         },
         extraReducers: (builder) => {
             builder
-                .addCase(addTask.fulfilled,(state,action)=>{
+                .addCase(addTask.fulfilled, (state, action) => {
                     const tasksForCurrentTodolist = state[action.payload.task.todoListId];
                     tasksForCurrentTodolist.unshift(action.payload.task)
                 })
                 .addCase(fetchTasks.fulfilled, (state, action) => {
                     state[action.payload.todolistId] = action.payload.tasks
+                })
+
+                .addCase(updateTask.fulfilled,(state, action)=>{
+                    const tasksForCurrentTodolist = state[action.payload.todolistId];
+                    const index = tasksForCurrentTodolist.findIndex((task) => task.id === action.payload.taskId);
+                    if (index !== -1) {
+                        tasksForCurrentTodolist[index] = {...tasksForCurrentTodolist[index], ...action.payload.domainModel}
+                    }
                 })
                 .addCase(todolistsActions.addTodolist, (state, action) => {
                     state[action.payload.todolist.id] = []
@@ -97,14 +105,14 @@ export const removeTaskTC = (taskId: string, todolistId: string): AppThunk => (d
 const addTask = createAppAsyncThunk<{ task: TaskType }, AddTaskArgType>(
     "tasks/addTask",
     async (arg, thunkAPI) => {
-        const { dispatch, rejectWithValue } = thunkAPI;
+        const {dispatch, rejectWithValue} = thunkAPI;
         try {
-            dispatch(appActions.setAppStatus({ status: "loading" }));
+            dispatch(appActions.setAppStatus({status: "loading"}));
             const res = await todolistsAPI.createTask(arg);
             if (res.data.resultCode === ResultCode.Success) {
                 const task = res.data.data.item;
-                dispatch(appActions.setAppStatus({ status: "succeeded" }));
-                return { task };
+                dispatch(appActions.setAppStatus({status: "succeeded"}));
+                return {task};
             } else {
                 handleServerAppError(res.data, dispatch);
                 return rejectWithValue(null);
@@ -115,45 +123,48 @@ const addTask = createAppAsyncThunk<{ task: TaskType }, AddTaskArgType>(
         }
     });
 
+const updateTask = createAppAsyncThunk<UpdateTaskArgType, UpdateTaskArgType>(
+    "tasks/updateTask",
+    async (arg, thunkAPI) => {
+        const {dispatch, rejectWithValue, getState} = thunkAPI;
 
+        try {
+            dispatch(appActions.setAppStatus({status: "loading"}));
+            const state = getState();
+            const task = state.tasks[arg.todolistId].find(t => t.id === arg.taskId)
+            if (!task) {
+                dispatch(appActions.setAppError({error: "Task not found in the state"}));
+                return rejectWithValue(null);
+            }
+            const apiModel: UpdateTaskModelType = {
+                deadline: task.deadline,
+                description: task.description,
+                priority: task.priority,
+                startDate: task.startDate,
+                title: task.title,
+                status: task.status,
+                ...arg.domainModel,
+            };
+            const res = await todolistsAPI.updateTask(arg.todolistId, arg.taskId, apiModel)
+            if (res.data.resultCode == ResultCode.Success) {
+                dispatch(appActions.setAppStatus({status: "succeeded"}));
+                return arg;
+            } else {
+                handleServerAppError(res.data, dispatch);
+                return rejectWithValue(null);
+            }
 
-export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelType, todolistId: string): AppThunk =>
-    (dispatch, getState: () => AppRootStateType) => {
-        const state = getState()
-        const task = state.tasks[todolistId].find(t => t.id === taskId)
-        if (!task) {
-            //throw new Error("task not found in the state");
-            console.warn("task not found in the state")
-            return
+        } catch (e) {
+            handleServerNetworkError(e, dispatch);
+            return rejectWithValue(null);
         }
 
-        const apiModel: UpdateTaskModelType = {
-            deadline: task.deadline,
-            description: task.description,
-            priority: task.priority,
-            startDate: task.startDate,
-            title: task.title,
-            status: task.status,
-            ...domainModel
-        }
-
-        todolistsAPI.updateTask(todolistId, taskId, apiModel)
-            .then(res => {
-                if (res.data.resultCode === 0) {
-                    const action = tasksActions.updateTask({taskId, model: domainModel, todolistId})
-                    dispatch(action)
-                } else {
-                    handleServerAppError(res.data, dispatch)
-                }
-            })
-            .catch((error) => {
-                handleServerNetworkError(error, dispatch)
-            })
     }
+)
 
 export const tasksReducer = slice.reducer
 export const tasksActions = slice.actions
-export const tasksThunks = {fetchTasks,addTask};
+export const tasksThunks = {fetchTasks, addTask, updateTask};
 
 // types
 export type UpdateDomainTaskModelType = {
@@ -168,8 +179,8 @@ export type TasksStateType = {
     [key: string]: Array<TaskType>
 }
 
-        export const ResultCode = {
-            Success: 0,
-            Error: 1,
-            Captcha: 10,
-        } as const;
+export const ResultCode = {
+    Success: 0,
+    Error: 1,
+    Captcha: 10,
+} as const;
