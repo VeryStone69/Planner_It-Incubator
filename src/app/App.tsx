@@ -13,7 +13,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import CircularProgress from "@mui/material/CircularProgress";
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
-import {useAppDispatch, useAppSelector} from "./store";
+import {useAppSelector} from "./store";
 import {ErrorSnackbar} from "../components/ErrorSnackbar/ErrorSnackbar";
 import Button from "@mui/material/Button";
 import {Navigate, Route, Routes} from "react-router-dom";
@@ -21,6 +21,7 @@ import {Login} from "../features/Login/Login";
 import {initializeAppTC, logoutTC} from "../features/Login/auth-reducer";
 import {RequestStatusType} from "./app-reducer";
 import {statusSelector, isInitializedSelector, isLoggedInAppSelector} from "./app.selector";
+import {useAppDispatch} from "../common/hooks";
 
 
 function App() {

@@ -8,8 +8,8 @@ import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 import {Delete} from '@mui/icons-material';
 import {RequestStatusType} from "../../../app/app-reducer";
-import {useAppDispatch} from "../../../app/store";
 import {tasksThunks} from "../tasks-reducer";
+import {useAppDispatch} from "../../../common/hooks";
 
 type PropsType = {
     id: string

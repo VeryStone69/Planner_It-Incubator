@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect} from 'react'
-import {useAppDispatch, useAppSelector} from '../../app/store'
+import {useAppSelector} from '../../app/store'
 import {
     addTodolistTC,
     changeTodolistTitleTC,
@@ -20,6 +20,7 @@ import {
     todolistsSelector,
     isLoggedInTodolistsListSelector
 } from "./Todolist/todolists.selector";
+import {useAppDispatch} from "../../common/hooks";
 
 export const TodolistsList: React.FC = () => {
 
