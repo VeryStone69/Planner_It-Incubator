@@ -1,16 +1,14 @@
-import {todolistsAPI, TodolistType} from '../../api/todolists-api'
+
 import {appActions, RequestStatusType} from "../../app/app-reducer";
 import {handleServerAppError, handleServerNetworkError} from "../../common/utils";
 import {AppThunk} from "../../app/store";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
+import {ResultCode} from "../../common/enums/common-enums";
+import {todolistsAPI, TodolistType} from "./todolists-api";
 
 
-enum RESULT_CODE_TODOLISTS_REDUSER {
-    SUCCUES,
-    FAILED,
-    CAPTCHA = 10
-}
+
 
 
 const slice = createSlice({
@@ -88,7 +86,7 @@ export const addTodolistTC = (title: string): AppThunk => {
         dispatch(appActions.setAppStatus({status: "loading"}))
         todolistsAPI.createTodolist(title)
             .then((res) => {
-                if (res.data.resultCode === RESULT_CODE_TODOLISTS_REDUSER.SUCCUES) {
+                if (res.data.resultCode === ResultCode.Success) {
                     dispatch(todolistsActions.addTodolist({todolist:res.data.data.item}))
                     dispatch(appActions.setAppStatus({status: "succeeded"}))
                 } else {
@@ -105,7 +103,7 @@ export const changeTodolistTitleTC = (id: string, title: string): AppThunk => {
         dispatch(appActions.setAppStatus({status: "loading"}))
         todolistsAPI.updateTodolist(id, title)
             .then((res) => {
-                if (res.data.resultCode === RESULT_CODE_TODOLISTS_REDUSER.SUCCUES) {
+                if (res.data.resultCode === ResultCode.Success) {
                     dispatch(todolistsActions.changeTodolistTitle({id, title}))
                     dispatch(appActions.setAppStatus({status: "succeeded"}))
                 } else {

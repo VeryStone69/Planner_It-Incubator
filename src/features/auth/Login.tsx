@@ -11,7 +11,7 @@ import {useFormik} from "formik";
 import {Navigate} from "react-router-dom";
 import {loginTC} from "./auth-reducer";
 import {useAppSelector} from "../../app/store";
-import {isLoggedInLoginSelector} from "./login.selector";
+import {isLoggedInLoginSelector} from "./auth-selector";
 import {useAppDispatch} from "../../common/hooks";
 
 type FormikErrorType = {

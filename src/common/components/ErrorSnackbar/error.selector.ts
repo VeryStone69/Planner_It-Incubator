@@ -1,3 +1,3 @@
-import {AppRootStateType} from "../../app/store";
+import {AppRootStateType} from "../../../app/store";
 
 export const errorSelector = ((state: AppRootStateType) => state.app.error)

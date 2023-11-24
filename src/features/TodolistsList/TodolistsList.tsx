@@ -9,8 +9,7 @@ import {
     TodolistDomainType, todolistsActions
 } from './todolists-reducer'
 import {removeTaskTC, TasksStateType, tasksThunks} from './tasks-reducer'
-import {TaskStatuses} from '../../api/todolists-api'
-import {AddItemForm} from '../../components/AddItemForm/AddItemForm'
+import {AddItemForm} from '../../common/components'
 import {Todolist} from './Todolist/Todolist'
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
@@ -21,6 +20,7 @@ import {
     isLoggedInTodolistsListSelector
 } from "./Todolist/todolists.selector";
 import {useAppDispatch} from "../../common/hooks";
+import {TaskStatuses} from "../../common/enums/common-enums";
 
 export const TodolistsList: React.FC = () => {
 
