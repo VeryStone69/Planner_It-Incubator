@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: refactoring the folder structure in the project">
-      <change afterPath="$PROJECT_DIR$/src/common/api/common-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/api/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/enums/common-enums.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/enums/ìndex.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/types/common-types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/auth/auth-api.ts" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: removeTask in task-reducer.ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditableSpan/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/EditableSpan/EditableSpan.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/ErrorSnackbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ErrorSnackbar/error.selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/error.selector.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/auth-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Login/login.selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/auth-selector.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Task/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Task/Task.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/types/common-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/types/common-types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +164,7 @@
       <workItem from="1699813517051" duration="32686000" />
       <workItem from="1700238837017" duration="31000" />
       <workItem from="1700238964221" duration="770000" />
-      <workItem from="1700680686833" duration="16604000" />
+      <workItem from="1700680686833" duration="19081000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -450,14 +430,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700856960366</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="update: refactoring the folder structure in the project">
+      <option name="closed" value="true" />
+      <created>1700861138387</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1700861138387</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: thunk creator for getTodolists,remove TDs, addTasks" />
     <MESSAGE value="update: full refactoring" />
     <MESSAGE value="add: night mode" />
     <MESSAGE value="add: preloader for all thunk creators" />
@@ -482,7 +469,8 @@
     <MESSAGE value="update: refactoring error handling files" />
     <MESSAGE value="update: refactoring hooks" />
     <MESSAGE value="update: refactoring the folder structure in the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: refactoring the folder structure in the project" />
+    <MESSAGE value="update: removeTask in task-reducer.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: removeTask in task-reducer.ts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -544,19 +532,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>46</line>
+          <line>41</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>47</line>
+          <line>42</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>48</line>
+          <line>43</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
@@ -577,12 +565,6 @@
           <line>80</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>81</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
@@ -664,176 +646,205 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>103</line>
+          <line>117</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>104</line>
+          <line>118</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>105</line>
+          <line>119</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>106</line>
+          <line>120</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>107</line>
+          <line>121</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>108</line>
+          <line>122</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>109</line>
+          <line>123</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>110</line>
+          <line>124</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>111</line>
+          <line>125</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>112</line>
+          <line>126</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>113</line>
+          <line>127</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>114</line>
+          <line>128</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>115</line>
+          <line>129</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>116</line>
+          <line>130</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>117</line>
+          <line>131</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>118</line>
+          <line>132</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>119</line>
+          <line>133</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>120</line>
+          <line>134</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>122</line>
+          <line>136</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>121</line>
+          <line>135</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>42</line>
+          <line>37</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>43</line>
+          <line>38</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>44</line>
+          <line>39</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>50</line>
+          <line>45</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>51</line>
+          <line>46</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>53</line>
+          <line>48</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>52</line>
+          <line>47</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>54</line>
+          <line>49</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
-          <line>55</line>
+          <line>50</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
+          <line>52</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
+          <line>53</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
+          <line>54</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
+          <line>55</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts</url>
+          <line>56</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="88" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

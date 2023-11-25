@@ -1,7 +1,7 @@
 import {AxiosResponse} from 'axios'
 import {UpdateDomainTaskModelType} from "./tasks-reducer";
 import {instance} from "../../common/api";
-import {ResponseType} from "../../common/types/common-types";
+import {RemoveTaskArgType, ResponseType} from "../../common/types/common-types";
 import {TaskPriorities, TaskStatuses} from "../../common/enums/common-enums";
 
 // api
@@ -23,8 +23,8 @@ export const todolistsAPI = {
     getTasks(todolistId: string) {
         return instance.get<GetTasksResponse>(`todo-lists/${todolistId}/tasks`);
     },
-    deleteTask(todolistId: string, taskId: string) {
-        return instance.delete<ResponseType>(`todo-lists/${todolistId}/tasks/${taskId}`);
+    deleteTask(arg:RemoveTaskArgType) {
+        return instance.delete<ResponseType>(`todo-lists/${arg.todolistId}/tasks/${arg.taskId}`);
     },
     createTask(arg: AddTaskArgType) {
         return instance.post<ResponseType<{ item: TaskType }>, AxiosResponse<ResponseType<{ item: TaskType }>>, {
