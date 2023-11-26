@@ -7,7 +7,7 @@ import {
 import {appActions} from "../../app/app-reducer";
 import {handleServerAppError, handleServerNetworkError} from "../../common/utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit"
-import {todolistsActions, todolistsThunks} from "./todolists-reducer";
+import {todolistsThunks} from "./todolists-reducer";
 import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
 import {createAppAsyncThunk} from "../../common/utils/create-app-async-thunk";
 import {ResultCode, TaskPriorities, TaskStatuses} from "../../common/enums/common-enums";
@@ -55,7 +55,8 @@ const slice = createSlice({
                     const index = tasksForCurrentTodolist.findIndex((task) => task.id === action.payload.taskId);
                     if (index !== -1) tasksForCurrentTodolist.splice(index, 1)
                 })
-                .addCase(todolistsActions.addTodolist, (state, action) => {
+
+                .addCase(todolistsThunks.addTodolist.fulfilled, (state, action) => {
                     state[action.payload.todolist.id] = []
                 })
                 .addCase(todolistsThunks.removeTodolist.fulfilled, (state, action) => {
@@ -159,7 +160,7 @@ const updateTask = createAppAsyncThunk<UpdateTaskArgType, UpdateTaskArgType>(
                 ...arg.domainModel,
             };
             const res = await todolistsAPI.updateTask(arg.todolistId, arg.taskId, apiModel)
-            if (res.data.resultCode == ResultCode.Success) {
+            if (res.data.resultCode === ResultCode.Success) {
                 dispatch(appActions.setAppStatus({status: "succeeded"}));
                 return arg;
             } else {

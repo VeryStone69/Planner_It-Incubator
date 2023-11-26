@@ -4,6 +4,7 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {AppThunk} from "../../app/store";
 import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
 import {authAPI, LoginDataType} from "./auth-api";
+import {ResultCode} from "../../common/enums/common-enums";
 
 
 const slice = createSlice({
@@ -60,7 +61,7 @@ export const logoutTC = (): AppThunk  => async (dispatch) => {
     dispatch(appActions.setAppStatus({status:"loading"}))
     authAPI.logout()
         .then(res => {
-            if (res.data.resultCode === 0) {
+            if (res.data.resultCode === ResultCode.Success) {
                 dispatch(authAction.setIsLoggedIn({ isLoggedIn: false }))
                 dispatch(appActions.setAppStatus({status:'succeeded'}))
                 dispatch(clearTodolistsAndTasks())

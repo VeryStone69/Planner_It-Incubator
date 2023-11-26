@@ -1,8 +1,6 @@
 import React, {useCallback, useEffect} from 'react'
 import {useAppSelector} from '../../app/store'
 import {
-    addTodolistTC,
-    changeTodolistTitleTC,
     FilterValuesType,
     TodolistDomainType, todolistsActions, todolistsThunks
 } from './todolists-reducer'
@@ -60,13 +58,11 @@ export const TodolistsList: React.FC = () => {
     }, [])
 
     const changeTodolistTitle = useCallback(function (id: string, title: string) {
-        const thunk = changeTodolistTitleTC(id, title)
-        dispatch(thunk)
+        dispatch(todolistsThunks.changeTodolistTitle({id, title}))
     }, [])
 
     const addTodolist = useCallback((title: string) => {
-        const thunk = addTodolistTC(title)
-        dispatch(thunk)
+        dispatch(todolistsThunks.addTodolist(title))
     }, [])
 
     if (!isLoggedIn) {
