@@ -3,10 +3,8 @@ import {useAppSelector} from '../../app/store'
 import {
     addTodolistTC,
     changeTodolistTitleTC,
-    fetchTodolistsTC,
     FilterValuesType,
-    removeTodolistTC,
-    TodolistDomainType, todolistsActions
+    TodolistDomainType, todolistsActions, todolistsThunks
 } from './todolists-reducer'
 import {TasksStateType, tasksThunks} from './tasks-reducer'
 import {AddItemForm} from '../../common/components'
@@ -33,8 +31,7 @@ export const TodolistsList: React.FC = () => {
         if (!isLoggedIn) {
             return;
         }
-        const thunk = fetchTodolistsTC()
-        dispatch(thunk)
+        dispatch(todolistsThunks.fetchTodolists())
     }, [])
 
     const removeTask = useCallback(function (taskId: string, todolistId: string) {
@@ -59,8 +56,7 @@ export const TodolistsList: React.FC = () => {
     }, [])
 
     const removeTodolist = useCallback(function (id: string) {
-        const thunk = removeTodolistTC(id)
-        dispatch(thunk)
+        dispatch(todolistsThunks.removeTodolist(id))
     }, [])
 
     const changeTodolistTitle = useCallback(function (id: string, title: string) {
