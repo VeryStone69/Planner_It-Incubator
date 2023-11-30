@@ -9,7 +9,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {useFormik} from "formik";
 import {Navigate} from "react-router-dom";
-import {loginTC} from "./auth-reducer";
+import {authThunks} from "./auth-reducer";
 import {useAppSelector} from "../../app/store";
 import {isLoggedInLoginSelector} from "./auth-selector";
 import {useAppDispatch} from "../../common/hooks";
@@ -45,7 +45,7 @@ export const Login = () => {
         },
         onSubmit: values => {
             formik.resetForm()
-            dispatch(loginTC(values))
+            dispatch(authThunks.login(values))
         },
     })
     if (isLoggedIn) {
