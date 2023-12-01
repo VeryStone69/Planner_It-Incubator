@@ -18,11 +18,12 @@ const slice = createSlice({
         setAppError: (state, action: PayloadAction<{ error: string | null }>) => {
             state.error = action.payload.error;
         },
-        setInitialized:(state, action:PayloadAction<{isInitialized:boolean}>)=>{
+        setInitialized: (state, action: PayloadAction<{ isInitialized: boolean }>) => {
             state.isInitialized = action.payload.isInitialized;
         }
     }
 })
+
 
 export const appReducer = slice.reducer;
 export const appActions = slice.actions;

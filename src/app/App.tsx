@@ -18,7 +18,7 @@ import {ErrorSnackbar} from "../common/components";
 import Button from "@mui/material/Button";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Login} from "../features/auth/Login";
-import {initializeAppTC, logoutTC} from "../features/auth/auth-reducer";
+import {authThunks} from "../features/auth/auth-reducer";
 import {RequestStatusType} from "./app-reducer";
 import {statusSelector, isInitializedSelector, isLoggedInAppSelector} from "./app.selector";
 import {useAppDispatch} from "../common/hooks";
@@ -32,7 +32,7 @@ function App() {
     const [mode, setMode] = React.useState<'light' | 'dark'>('light');
 
     useEffect(() => {
-        dispatch(initializeAppTC())
+        dispatch(authThunks.initializeApp())
     }, [])
 
     const colorMode = React.useMemo(
@@ -53,7 +53,7 @@ function App() {
         [mode],
     );
     const logOutHandler = () => {
-        dispatch(logoutTC())
+        dispatch(authThunks.logout())
     }
 
     if (!isInitialized) {
