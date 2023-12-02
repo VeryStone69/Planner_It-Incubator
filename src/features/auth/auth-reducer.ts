@@ -41,7 +41,7 @@ const login = createAppAsyncThunk<{ isLoggedIn: boolean }, LoginDataType>(
                 return {isLoggedIn: true}
             } else {
                 handleServerAppError(res.data, dispatch)
-                return rejectWithValue(null);
+                return rejectWithValue(res.data);
             }
         } catch (e) {
             handleServerNetworkError(e, dispatch);
@@ -58,7 +58,6 @@ const logout = createAppAsyncThunk<{ isLoggedIn: boolean }, undefined>(
             dispatch(appActions.setAppStatus({status: "loading"}));
             const res = await authAPI.logout();
             if (res.data.resultCode === ResultCode.Success) {
-                // dispatch(authAction.setIsLoggedIn({ isLoggedIn: false }))
                 dispatch(appActions.setAppStatus({status: 'succeeded'}))
                 dispatch(clearTodolistsAndTasks())
                 return {isLoggedIn: false}

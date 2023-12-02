@@ -1,9 +1,21 @@
 
-export type ResponseType<D = {}> = {
+// export type ResponseType<D = {}> = {
+//     resultCode: number
+//     messages: Array<string>
+//     fieldsErrors: Array<string>
+//     data: D
+// }
+
+export type FieldErrorType = {
+    error: string
+    field: string
+}
+
+export type BaseResponseType<D = {}> = {
     resultCode: number
-    messages: Array<string>
-    fieldsErrors: Array<string>
+    messages: string[]
     data: D
+    fieldsErrors: FieldErrorType[]
 }
 
 export type RemoveTaskArgType = {
