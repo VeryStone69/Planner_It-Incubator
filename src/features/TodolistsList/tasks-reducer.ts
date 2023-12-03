@@ -9,10 +9,10 @@ import {handleServerAppError} from "../../common/utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit"
 import {todolistsThunks} from "./todolists-reducer";
 import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
-import {createAppAsyncThunk} from "../../common/utils/create-app-async-thunk";
+import {createAppAsyncThunk} from "../../common/utils";
 import {ResultCode, TaskPriorities, TaskStatuses} from "../../common/enums/common-enums";
 import {RemoveTaskArgType} from "../../common/types";
-import {thunkTryCatch} from "../../common/utils/thunkTryCatch";
+import {thunkTryCatch} from "../../common/utils";
 
 
 const slice = createSlice({
