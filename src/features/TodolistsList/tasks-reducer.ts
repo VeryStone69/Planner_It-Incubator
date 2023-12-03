@@ -81,7 +81,7 @@ const slice = createSlice({
 // thunks
 
 const fetchTasks = createAppAsyncThunk<{ tasks: TaskType[]; todolistId: string }, string>(
-    "tasks/fetchTasks",
+    `${slice.name}/fetchTasks`,
     async (todolistId, thunkAPI) => {
         const {dispatch, rejectWithValue} = thunkAPI;
         return thunkTryCatch(thunkAPI, async () => {
@@ -95,7 +95,7 @@ const fetchTasks = createAppAsyncThunk<{ tasks: TaskType[]; todolistId: string }
 
 
 const removeTask = createAppAsyncThunk<RemoveTaskArgType,RemoveTaskArgType>(
-    "tasks/removeTask",
+    `${slice.name}/removeTask`,
     async (arg,thunkAPI)=>{
         const {dispatch,rejectWithValue} = thunkAPI;
         return thunkTryCatch(thunkAPI, async () => {
@@ -113,7 +113,7 @@ const removeTask = createAppAsyncThunk<RemoveTaskArgType,RemoveTaskArgType>(
 
 
 const addTask = createAppAsyncThunk<{ task: TaskType }, AddTaskArgType>(
-    "tasks/addTask",
+    `${slice.name}/addTask`,
     async (arg, thunkAPI) => {
         const {dispatch, rejectWithValue} = thunkAPI;
         return thunkTryCatch(thunkAPI, async ()=>{
@@ -131,7 +131,7 @@ const addTask = createAppAsyncThunk<{ task: TaskType }, AddTaskArgType>(
 
 
 const updateTask = createAppAsyncThunk<UpdateTaskArgType, UpdateTaskArgType>(
-    "tasks/updateTask",
+    `${slice.name}/updateTask`,
     async (arg, thunkAPI) => {
         const {dispatch, rejectWithValue, getState} = thunkAPI;
         return thunkTryCatch(thunkAPI, async ()=>{
