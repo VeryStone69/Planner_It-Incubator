@@ -44,7 +44,6 @@ export const Login = () => {
             return errors
         },
         onSubmit: (values) => {
-            formik.resetForm()
             dispatch(authThunks.login(values))
         },
     })

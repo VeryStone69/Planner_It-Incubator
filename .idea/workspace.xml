@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: types">
-      <change afterPath="$PROJECT_DIR$/src/common/types/index.ts" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: refactoring (add thunkTryCatch.ts and update auth-reducer.ts, tasks-reducer.ts)">
+      <change afterPath="$PROJECT_DIR$/src/common/utils/thunkTryCatch.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/types/common-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/types/common-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/create-app-async-thunk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/create-app-async-thunk.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/auth-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/auth-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/auth-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +167,7 @@
       <workItem from="1700238964221" duration="770000" />
       <workItem from="1700680686833" duration="28255000" />
       <workItem from="1701013088833" duration="2517000" />
-      <workItem from="1701366078920" duration="20369000" />
+      <workItem from="1701366078920" duration="30563000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -492,14 +489,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701457673719</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="update: types">
+      <option name="closed" value="true" />
+      <created>1701545030241</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1701545030241</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: routing, 404, login page" />
     <MESSAGE value="add: Formik: form,resetForm, getFieldProps" />
     <MESSAGE value="add: Auth flow: login,authme,logout" />
     <MESSAGE value="add: disabled button for login" />
@@ -524,7 +528,8 @@
     <MESSAGE value="update: initializeApp in auth-reducer.ts" />
     <MESSAGE value="update: store.ts (new types for store,dispatch)" />
     <MESSAGE value="update: types" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: types" />
+    <MESSAGE value="update: refactoring (add thunkTryCatch.ts and update auth-reducer.ts, tasks-reducer.ts)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: refactoring (add thunkTryCatch.ts and update auth-reducer.ts, tasks-reducer.ts)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
