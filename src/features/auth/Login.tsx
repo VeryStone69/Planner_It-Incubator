@@ -13,6 +13,7 @@ import {authThunks} from "./auth-reducer";
 import {useAppSelector} from "../../app/store";
 import {isLoggedInLoginSelector} from "./auth-selector";
 import {useAppDispatch} from "../../common/hooks";
+import {useActions} from "../../common/hooks/useActions";
 
 type FormikErrorType = {
     email?: string
@@ -22,7 +23,7 @@ type FormikErrorType = {
 
 export const Login = () => {
     const isLoggedIn = useAppSelector<boolean>(isLoggedInLoginSelector)
-    const dispatch = useAppDispatch()
+    const {login: loginThunk} = useActions(authThunks)
     const formik = useFormik({
         initialValues: {
             email: "free@samuraijs.com",
@@ -44,7 +45,7 @@ export const Login = () => {
             return errors
         },
         onSubmit: (values) => {
-            dispatch(authThunks.login(values))
+            loginThunk(values)
         },
     })
     if (isLoggedIn) {

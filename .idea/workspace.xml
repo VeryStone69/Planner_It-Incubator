@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: todolists-reducer.ts">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: change typePrefix in auth/tasks-reducer">
+      <change afterPath="$PROJECT_DIR$/src/common/hooks/useActions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/types/common-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/types/common-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/ErrorSnackbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/hooks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +170,7 @@
       <workItem from="1700238964221" duration="770000" />
       <workItem from="1700680686833" duration="28255000" />
       <workItem from="1701013088833" duration="2517000" />
-      <workItem from="1701366078920" duration="31867000" />
+      <workItem from="1701366078920" duration="35118000" />
     </task>
     <task id="LOCAL-00001" summary="add: reduser (with old state)">
       <option name="closed" value="true" />
@@ -503,14 +508,29 @@
       <option name="project" value="LOCAL" />
       <updated>1701614519257</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update: todolists-reducer.ts">
+      <option name="closed" value="true" />
+      <created>1701615836112</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1701615836112</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update: change typePrefix in auth/tasks-reducer">
+      <option name="closed" value="true" />
+      <created>1701616089251</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1701616089251</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: Auth flow: login,authme,logout" />
     <MESSAGE value="add: disabled button for login" />
     <MESSAGE value="fix: loading todolists, deleting todolists when exiting the application" />
     <MESSAGE value="add: redux toolkit; update: store.ts" />
@@ -535,7 +555,8 @@
     <MESSAGE value="update: types" />
     <MESSAGE value="update: refactoring (add thunkTryCatch.ts and update auth-reducer.ts, tasks-reducer.ts)" />
     <MESSAGE value="update: todolists-reducer.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: todolists-reducer.ts" />
+    <MESSAGE value="update: change typePrefix in auth/tasks-reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: change typePrefix in auth/tasks-reducer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -586,19 +607,9 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/App.tsx</url>
-          <line>28</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/Todolist/todolists.selector.ts</url>
           <line>2</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx</url>
-          <line>33</line>
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

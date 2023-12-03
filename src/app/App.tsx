@@ -21,18 +21,18 @@ import {Login} from "../features/auth/Login";
 import {authThunks} from "../features/auth/auth-reducer";
 import {RequestStatusType} from "./app-reducer";
 import {statusSelector, isInitializedSelector, isLoggedInAppSelector} from "./app.selector";
-import {useAppDispatch} from "../common/hooks";
+import {useActions} from "../common/hooks/useActions";
 
 
 function App() {
     const status = useAppSelector<RequestStatusType>(statusSelector)
     const isLoggedIn = useAppSelector<boolean>(isLoggedInAppSelector)
     const isInitialized = useAppSelector<boolean>(isInitializedSelector)
-    const dispatch = useAppDispatch();
+    const {initializeApp: initializeAppThunk, logout: logoutThunk} = useActions(authThunks)
     const [mode, setMode] = React.useState<'light' | 'dark'>('light');
 
     useEffect(() => {
-        dispatch(authThunks.initializeApp())
+        initializeAppThunk()
     }, [])
 
     const colorMode = React.useMemo(
@@ -53,7 +53,7 @@ function App() {
         [mode],
     );
     const logOutHandler = () => {
-        dispatch(authThunks.logout())
+        logoutThunk()
     }
 
     if (!isInitialized) {
