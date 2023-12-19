@@ -1,11 +1,11 @@
-import {appActions} from "../../app/app-reducer";
-import {handleServerAppError} from "../../common/utils";
+import {appActions} from "../../../app/app-reducer";
+import {handleServerAppError} from "../../../common/utils";
 import {createSlice} from "@reduxjs/toolkit";
-import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
-import {authAPI, LoginDataType} from "./auth-api";
-import {ResultCode} from "../../common/enums/common-enums";
-import {createAppAsyncThunk} from "../../common/utils/create-app-async-thunk";
-import {thunkTryCatch} from "../../common/utils/thunkTryCatch";
+import {clearTodolistsAndTasks} from "../../../common/actions/common.actions";
+import {authAPI, LoginDataType} from "../api/auth-api";
+import {ResultCode} from "../../../common/enums/common-enums";
+import {createAppAsyncThunk} from "../../../common/utils/create-app-async-thunk";
+import {thunkTryCatch} from "../../../common/utils/thunkTryCatch";
 
 
 const slice = createSlice({

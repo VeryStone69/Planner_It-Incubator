@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './App.css'
-import {TodolistsList} from '../features/TodolistsList/TodolistsList'
+import {TodolistsList} from '../features/TodolistsList/ui/TodolistsList'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -17,8 +17,8 @@ import {useAppSelector} from "./store";
 import {ErrorSnackbar} from "../common/components";
 import Button from "@mui/material/Button";
 import {Navigate, Route, Routes} from "react-router-dom";
-import {Login} from "../features/auth/Login";
-import {authThunks} from "../features/auth/auth-reducer";
+import {Login} from "../features/auth/ui/Login";
+import {authThunks} from "../features/auth/model/auth-reducer";
 import {RequestStatusType} from "./app-reducer";
 import {statusSelector, isInitializedSelector, isLoggedInAppSelector} from "./app.selector";
 import {useActions} from "../common/hooks/useActions";

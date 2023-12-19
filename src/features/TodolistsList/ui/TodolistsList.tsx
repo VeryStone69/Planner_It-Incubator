@@ -1,11 +1,11 @@
 import React, {useCallback, useEffect} from 'react'
-import {useAppSelector} from '../../app/store'
+import {useAppSelector} from '../../../app/store'
 import {
     FilterValuesType,
     TodolistDomainType, todolistsActions, todolistsThunks
-} from './todolists-reducer'
-import {TasksStateType, tasksThunks} from './tasks-reducer'
-import {AddItemForm} from '../../common/components'
+} from '../model/todolists-reducer'
+import {TasksStateType, tasksThunks} from '../model/tasks-reducer'
+import {AddItemForm} from '../../../common/components'
 import {Todolist} from './Todolist/Todolist'
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
@@ -15,8 +15,8 @@ import {
     todolistsSelector,
     isLoggedInTodolistsListSelector
 } from "./Todolist/todolists.selector";
-import {TaskStatuses} from "../../common/enums/common-enums";
-import {useActions} from "../../common/hooks/useActions";
+import {TaskStatuses} from "../../../common/enums/common-enums";
+import {useActions} from "../../../common/hooks/useActions";
 
 export const TodolistsList: React.FC = () => {
 

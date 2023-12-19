@@ -1,16 +1,16 @@
 import React, {useCallback, useEffect} from 'react'
-import {AddItemForm} from '../../../common/components'
-import {EditableSpan} from '../../../common/components'
+import {AddItemForm} from '../../../../common/components'
+import {EditableSpan} from '../../../../common/components'
 import {Task} from './Task/Task'
-import {FilterValuesType} from '../todolists-reducer'
+import {FilterValuesType} from '../../model/todolists-reducer'
 import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 import {Delete} from '@mui/icons-material';
-import {RequestStatusType} from "../../../app/app-reducer";
-import {tasksThunks} from "../tasks-reducer";
-import {TaskStatuses} from "../../../common/enums/common-enums";
-import {TaskType} from "../todolists-api";
-import {useActions} from "../../../common/hooks/useActions";
+import {RequestStatusType} from "../../../../app/app-reducer";
+import {tasksThunks} from "../../model/tasks-reducer";
+import {TaskStatuses} from "../../../../common/enums/common-enums";
+import {TaskType} from "../../api/todolists-api";
+import {useActions} from "../../../../common/hooks/useActions";
 
 type PropsType = {
     id: string

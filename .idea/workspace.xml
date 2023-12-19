@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: change typePrefix in auth/tasks-reducer">
-      <change afterPath="$PROJECT_DIR$/src/common/hooks/useActions.ts" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: tests for todolist-reducer">
+      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/tasks-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/tasks-api.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/auth/lib/useLogin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/ErrorSnackbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/hooks/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Task/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/todolists.selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/todolists.selector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/todolists-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/Login.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/auth-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/api/auth-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/auth-selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth-selector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/task-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/task-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/todolist-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/todolist-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/todolist-task.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/todolist-task.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +49,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -46,6 +62,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.todolist-reducer.test.ts.executor": "Run",
+    "Jest.todolist-task.test.ts.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
@@ -56,6 +75,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs.jest.jest_package": "D:/itincubator/monday_with_IGOR/my-app/node_modules/react-scripts",
     "nodejs_package_manager_path": "yarn",
+    "npm.start.executor": "Run",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "D:\\itincubator\\monday_with_IGOR\\my-app\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -66,59 +86,51 @@
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList" />
-      <recent name="D:\itincubator\monday_with_IGOR\my-app\src" />
-      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\common" />
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\model" />
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\auth\ui" />
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\auth\model" />
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\api" />
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\ui" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
-    <configuration name="addTodoListAC function.should add a new todolist to the state" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="correct status should be set (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redusers/todolistReducer.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/app/app-reducer.test.ts" />
       <test-names>
-        <test-name value="addTodoListAC function" />
-        <test-name value="should add a new todolist to the state" />
+        <test-name value="correct status should be set" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="addTodoListAC function.should not modify state if provided todolistId already exists" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="task-reducer.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redusers/todolistReducer.test.tsx" />
-      <test-names>
-        <test-name value="addTodoListAC function" />
-        <test-name value="should not modify state if provided todolistId already exists" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
       <method v="2" />
     </configuration>
-    <configuration name="updateTodolistTitleAC function.should not modify state if todolist with specified id is not found" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="todolist-reducer.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redusers/todolistReducer.test.tsx" />
-      <test-names>
-        <test-name value="updateTodolistTitleAC function" />
-        <test-name value="should not modify state if todolist with specified id is not found" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/tests/todolist-reducer.test.ts" />
       <method v="2" />
     </configuration>
-    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="deploy" />
-      </scripts>
+    <configuration name="todolist-task.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/tests/todolist-task.test.ts" />
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -134,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.deploy" />
-        <item itemvalue="Jest.addTodoListAC function.should not modify state if provided todolistId already exists" />
-        <item itemvalue="Jest.addTodoListAC function.should add a new todolist to the state" />
-        <item itemvalue="Jest.updateTodolistTitleAC function.should not modify state if todolist with specified id is not found" />
+        <item itemvalue="Jest.todolist-task.test.ts" />
+        <item itemvalue="Jest.todolist-reducer.test.ts" />
+        <item itemvalue="Jest.task-reducer.test.ts" />
+        <item itemvalue="Jest.correct status should be set (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -170,15 +182,14 @@
       <workItem from="1700238964221" duration="770000" />
       <workItem from="1700680686833" duration="28255000" />
       <workItem from="1701013088833" duration="2517000" />
-      <workItem from="1701366078920" duration="35118000" />
-    </task>
-    <task id="LOCAL-00001" summary="add: reduser (with old state)">
-      <option name="closed" value="true" />
-      <created>1692173680640</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1692173680640</updated>
+      <workItem from="1701366078920" duration="37473000" />
+      <workItem from="1701977319513" duration="6361000" />
+      <workItem from="1702194823902" duration="140000" />
+      <workItem from="1702195050807" duration="502000" />
+      <workItem from="1702195580858" duration="1906000" />
+      <workItem from="1702234726794" duration="2119000" />
+      <workItem from="1702543913047" duration="1381000" />
+      <workItem from="1702762232233" duration="4101000" />
     </task>
     <task id="LOCAL-00002" summary="add: reduser (without old state)">
       <option name="closed" value="true" />
@@ -524,18 +535,61 @@
       <option name="project" value="LOCAL" />
       <updated>1701616089251</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="add: new hook useActions.ts and refactoring dispatch methods in components">
+      <option name="closed" value="true" />
+      <created>1701619797723</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1701619797723</updated>
+    </task>
+    <task id="LOCAL-00046" summary="add: comments for utils">
+      <option name="closed" value="true" />
+      <created>1701620901878</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1701620901878</updated>
+    </task>
+    <task id="LOCAL-00047" summary="add: tests for app-reducer">
+      <option name="closed" value="true" />
+      <created>1701978293998</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1701978293998</updated>
+    </task>
+    <task id="LOCAL-00048" summary="add: tests for task-reducer">
+      <option name="closed" value="true" />
+      <created>1701978873782</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1701978873782</updated>
+    </task>
+    <task id="LOCAL-00049" summary="add: tests for todolist-reducer">
+      <option name="closed" value="true" />
+      <created>1702405765090</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1702405765090</updated>
+    </task>
+    <task id="LOCAL-00050" summary="add: tests for todolist-reducer">
+      <option name="closed" value="true" />
+      <created>1702409693782</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1702409693782</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: disabled button for login" />
-    <MESSAGE value="fix: loading todolists, deleting todolists when exiting the application" />
-    <MESSAGE value="add: redux toolkit; update: store.ts" />
-    <MESSAGE value="add: redux toolkit; update: store.ts, default errors message" />
-    <MESSAGE value="add: type AppThunk in store, update: auth-reducer.ts to RTK" />
     <MESSAGE value="update: app-reducer.tsx: add redux toolkit" />
     <MESSAGE value="update: task-reducer.tsx, bugfix in Todolist.tsx" />
     <MESSAGE value="update: all selectors into separate files" />
@@ -556,7 +610,12 @@
     <MESSAGE value="update: refactoring (add thunkTryCatch.ts and update auth-reducer.ts, tasks-reducer.ts)" />
     <MESSAGE value="update: todolists-reducer.ts" />
     <MESSAGE value="update: change typePrefix in auth/tasks-reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: change typePrefix in auth/tasks-reducer" />
+    <MESSAGE value="add: new hook useActions.ts and refactoring dispatch methods in components" />
+    <MESSAGE value="add: comments for utils" />
+    <MESSAGE value="add: tests for app-reducer" />
+    <MESSAGE value="add: tests for task-reducer" />
+    <MESSAGE value="add: tests for todolist-reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: tests for todolist-reducer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -607,7 +666,7 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/features/TodolistsList/Todolist/todolists.selector.ts</url>
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/todolists.selector.ts</url>
           <line>2</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>

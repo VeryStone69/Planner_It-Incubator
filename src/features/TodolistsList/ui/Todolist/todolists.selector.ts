@@ -1,4 +1,4 @@
-import {AppRootStateType} from "../../../app/store";
+import {AppRootStateType} from "../../../../app/store";
 
 export const isLoggedInTodolistsListSelector = ((state:AppRootStateType) => state.authReducer.isLoggedIn)
 export  const todolistsSelector = ((state:AppRootStateType) => state.todolists)

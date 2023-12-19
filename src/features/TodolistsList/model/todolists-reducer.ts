@@ -1,12 +1,12 @@
-import {appActions, RequestStatusType} from "../../app/app-reducer";
-import {handleServerAppError} from "../../common/utils";
+import {appActions, RequestStatusType} from "../../../app/app-reducer";
+import {handleServerAppError} from "../../../common/utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
-import {ResultCode} from "../../common/enums/common-enums";
-import {todolistsAPI, TodolistType} from "./todolists-api";
-import {createAppAsyncThunk} from "../../common/utils";
-import {UpdateTodolistTitleArgType} from "../../common/types";
-import {thunkTryCatch} from "../../common/utils";
+import {clearTodolistsAndTasks} from "../../../common/actions/common.actions";
+import {ResultCode} from "../../../common/enums/common-enums";
+import {todolistsAPI, TodolistType} from "../api/todolists-api";
+import {createAppAsyncThunk} from "../../../common/utils";
+import {UpdateTodolistTitleArgType} from "../../../common/types";
+import {thunkTryCatch} from "../../../common/utils";
 
 
 const slice = createSlice({

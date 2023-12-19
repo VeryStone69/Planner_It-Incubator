@@ -3,16 +3,16 @@ import {
     TaskType,
     todolistsAPI, UpdateTaskArgType,
     UpdateTaskModelType
-} from './todolists-api'
-import {appActions} from "../../app/app-reducer";
-import {handleServerAppError} from "../../common/utils";
+} from '../api/todolists-api'
+import {appActions} from "../../../app/app-reducer";
+import {handleServerAppError} from "../../../common/utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit"
 import {todolistsThunks} from "./todolists-reducer";
-import {clearTodolistsAndTasks} from "../../common/actions/common.actions";
-import {createAppAsyncThunk} from "../../common/utils";
-import {ResultCode, TaskPriorities, TaskStatuses} from "../../common/enums/common-enums";
-import {RemoveTaskArgType} from "../../common/types";
-import {thunkTryCatch} from "../../common/utils";
+import {clearTodolistsAndTasks} from "../../../common/actions/common.actions";
+import {createAppAsyncThunk} from "../../../common/utils";
+import {ResultCode, TaskPriorities, TaskStatuses} from "../../../common/enums/common-enums";
+import {RemoveTaskArgType} from "../../../common/types";
+import {thunkTryCatch} from "../../../common/utils";
 
 
 const slice = createSlice({
@@ -175,7 +175,5 @@ export type UpdateDomainTaskModelType = {
     startDate?: string
     deadline?: string
 }
-export type TasksStateType = {
-    [key: string]: Array<TaskType>
-}
+export type TasksStateType = Record<string, TaskType[]>
 
