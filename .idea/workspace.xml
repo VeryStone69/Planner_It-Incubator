@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: refactoring">
-      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/todolists/todolists-api.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/api/tasks-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/tasks/tasks-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/api/tasks-api.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/tasks/tasks-api.types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/todolists/todolists-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/api/todolists/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/todolists/todolists-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/api/auth-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/api/auth-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/todolist-task.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/todolist-task.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,15 +175,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="4165000" />
-    </task>
-    <task id="LOCAL-00003" summary="add: unit tests for taskReduser">
-      <option name="closed" value="true" />
-      <created>1692178732208</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1692178732208</updated>
+      <workItem from="1703329542894" duration="5792000" />
     </task>
     <task id="LOCAL-00004" summary="add: unit tests for todolistReduser and comments">
       <option name="closed" value="true" />
@@ -576,7 +561,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703017170267</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update: refactoring">
+      <option name="closed" value="true" />
+      <created>1703350690086</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1703350690087</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

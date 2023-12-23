@@ -44,16 +44,8 @@ export const TodolistsList: React.FC = () => {
         fetchTodolistsThunk()
     }, [])
 
-    // const removeTask = useCallback(function (taskId: string, todolistId: string) {
-    //     removeTaskThunk({taskId, todolistId})
-    // }, [])
-
     const addTask = useCallback(function (title: string, todolistId: string) {
         addTaskThunk({title, todolistId})
-    }, [])
-
-    const changeStatus = useCallback(function (taskId: string, status: TaskStatuses, todolistId: string) {
-        updateTaskThunk({taskId, domainModel: {status}, todolistId})
     }, [])
 
     const changeTaskTitle = useCallback(function (taskId: string, title: string, todolistId: string) {
@@ -97,7 +89,6 @@ export const TodolistsList: React.FC = () => {
                                 changeFilter={changeFilter}
                                 addTask={addTask}
                                 entityStatus={tl.entityStatus}
-                                changeTaskStatus={changeStatus}
                                 filter={tl.filter}
                                 removeTodolist={removeTodolist}
                                 changeTaskTitle={changeTaskTitle}

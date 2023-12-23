@@ -13,20 +13,24 @@ import {useActions} from "../../../../../common/hooks/useActions";
 type TaskPropsType = {
     task: TaskType
     todolistId: string
-    changeTaskStatus: (id: string, status: TaskStatuses, todolistId: string) => void
     changeTaskTitle: (taskId: string, newTitle: string, todolistId: string) => void
     entityStatus: RequestStatusType
 }
 
+// const changeStatus = useCallback(function (taskId: string, status: TaskStatuses, todolistId: string) {
+//     updateTaskThunk({taskId, domainModel: {status}, todolistId})
+// }, [])
 
 export const Task = React.memo((props: TaskPropsType) => {
-    const {removeTask} = useActions(tasksThunks)
-    const onClickHandler = () => removeTask({taskId: props.task.id, todolistId: props.todolistId});
+    const {removeTask,updateTask} = useActions(tasksThunks)
+    const removeTaskHandler = () => removeTask({taskId: props.task.id, todolistId: props.todolistId});
 
-    const onChangeHandler = useCallback((e: ChangeEvent<HTMLInputElement>) => {
-        let newIsDoneValue = e.currentTarget.checked
-        props.changeTaskStatus(props.task.id, newIsDoneValue ? TaskStatuses.Completed : TaskStatuses.New, props.todolistId)
-    }, [props.task.id, props.todolistId]);
+    const changeTaskHandler = (e: ChangeEvent<HTMLInputElement>) =>{
+        let newIsDoneValue = e.currentTarget.checked;
+        let status = newIsDoneValue ? TaskStatuses.Completed : TaskStatuses.New
+        updateTask({taskId:props.task.id, domainModel: {status}, todolistId:props.todolistId})
+    }
+
 
     const onTitleChangeHandler = useCallback((newValue: string) => {
         props.changeTaskTitle(props.task.id, newValue, props.todolistId)
@@ -36,11 +40,11 @@ export const Task = React.memo((props: TaskPropsType) => {
         <Checkbox
             checked={props.task.status === TaskStatuses.Completed}
             color="primary"
-            onChange={onChangeHandler}
+            onChange={changeTaskHandler}
         />
 
         <EditableSpan value={props.task.title} onChange={onTitleChangeHandler}/>
-        <IconButton onClick={onClickHandler} disabled={props.entityStatus === "loading"}>
+        <IconButton onClick={removeTaskHandler} disabled={props.entityStatus === "loading"}>
             <Delete/>
         </IconButton>
     </div>
