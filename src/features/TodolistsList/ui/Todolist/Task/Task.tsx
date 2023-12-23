@@ -1,23 +1,27 @@
-import React, { ChangeEvent, useCallback } from 'react'
-import { EditableSpan } from '../../../../../common/components'
+import React, {ChangeEvent, useCallback} from 'react'
+import {EditableSpan} from '../../../../../common/components'
 
-import { Delete } from '@mui/icons-material';
+import {Delete} from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import Checkbox from '@mui/material/Checkbox';
 import {RequestStatusType} from "../../../../../app/app-reducer";
 import {TaskStatuses} from "../../../../../common/enums/common-enums";
-import {TaskType} from "../../../api/todolists-api";
+import {TaskType} from "../../../api/tasks/tasks-api.types";
+import {tasksThunks} from "../../../model/tasks-reducer";
+import {useActions} from "../../../../../common/hooks/useActions";
 
 type TaskPropsType = {
     task: TaskType
     todolistId: string
     changeTaskStatus: (id: string, status: TaskStatuses, todolistId: string) => void
     changeTaskTitle: (taskId: string, newTitle: string, todolistId: string) => void
-    removeTask: (taskId: string, todolistId: string) => void
     entityStatus: RequestStatusType
 }
+
+
 export const Task = React.memo((props: TaskPropsType) => {
-    const onClickHandler = useCallback(() => props.removeTask(props.task.id, props.todolistId), [props.task.id, props.todolistId]);
+    const {removeTask} = useActions(tasksThunks)
+    const onClickHandler = () => removeTask({taskId: props.task.id, todolistId: props.todolistId});
 
     const onChangeHandler = useCallback((e: ChangeEvent<HTMLInputElement>) => {
         let newIsDoneValue = e.currentTarget.checked
@@ -36,7 +40,7 @@ export const Task = React.memo((props: TaskPropsType) => {
         />
 
         <EditableSpan value={props.task.title} onChange={onTitleChangeHandler}/>
-        <IconButton onClick={onClickHandler}  disabled={props.entityStatus === "loading"}>
+        <IconButton onClick={onClickHandler} disabled={props.entityStatus === "loading"}>
             <Delete/>
         </IconButton>
     </div>

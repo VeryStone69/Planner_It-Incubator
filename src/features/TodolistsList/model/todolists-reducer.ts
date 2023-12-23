@@ -3,10 +3,11 @@ import {handleServerAppError} from "../../../common/utils";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {clearTodolistsAndTasks} from "../../../common/actions/common.actions";
 import {ResultCode} from "../../../common/enums/common-enums";
-import {todolistsAPI, TodolistType} from "../api/todolists-api";
+import {todolistsAPI} from "../api/todolists/todolists-api";
 import {createAppAsyncThunk} from "../../../common/utils";
 import {UpdateTodolistTitleArgType} from "../../../common/types";
 import {thunkTryCatch} from "../../../common/utils";
+import {TodolistType} from "../api/todolists/todolists-api.types";
 
 
 const slice = createSlice({

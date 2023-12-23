@@ -1,5 +1,5 @@
-import {instance} from "../../../common/api";
-import {BaseResponseType, RemoveTaskArgType} from "../../../common/types";
+import {instance} from "../../../../common/api";
+import {BaseResponseType, RemoveTaskArgType} from "../../../../common/types";
 import {AxiosResponse} from "axios";
 import {AddTaskArgType, GetTasksResponse, TaskType, UpdateTaskModelType} from "./tasks-api.types";
 

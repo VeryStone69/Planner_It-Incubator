@@ -1,5 +1,5 @@
-import {UpdateDomainTaskModelType} from "../model/tasks-reducer";
-import {TaskPriorities, TaskStatuses} from "../../../common/enums/common-enums";
+import {UpdateDomainTaskModelType} from "../../model/tasks-reducer";
+import {TaskPriorities, TaskStatuses} from "../../../../common/enums/common-enums";
 
 export type GetTasksResponse = {
     error: string | null

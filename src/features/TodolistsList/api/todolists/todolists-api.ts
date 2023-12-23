@@ -1,8 +1,8 @@
 import {AxiosResponse} from 'axios'
-import {UpdateDomainTaskModelType} from "../model/tasks-reducer";
-import {instance} from "../../../common/api";
-import {RemoveTaskArgType, BaseResponseType, UpdateTodolistTitleArgType} from "../../../common/types";
-import {TaskPriorities, TaskStatuses} from "../../../common/enums/common-enums";
+import {instance} from "../../../../common/api";
+import {BaseResponseType, UpdateTodolistTitleArgType} from "../../../../common/types";
+import {TaskPriorities, TaskStatuses} from "../../../../common/enums/common-enums";
+import {TodolistType} from "./todolists-api.types";
 
 // api
 export const todolistsAPI = {
@@ -49,18 +49,7 @@ export const todolistsAPI = {
 //     title: string;
 //     todolistId: string;
 // };
-export type TodolistType = {
-    id: string
-    title: string
-    addedDate: string
-    order: number
-}
 
-export type AuthResponseType = {
-    id: number
-    login: string
-    email: string
-}
 // export type TaskType = {
 //     description: string
 //     title: string
