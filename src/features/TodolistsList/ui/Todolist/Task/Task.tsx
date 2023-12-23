@@ -1,6 +1,5 @@
 import React, {ChangeEvent} from 'react'
 import {EditableSpan} from '../../../../../common/components'
-
 import {Delete} from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import Checkbox from '@mui/material/Checkbox';
@@ -19,16 +18,16 @@ type TaskPropsType = {
 
 
 export const Task = React.memo((props: TaskPropsType) => {
-    const {removeTask,updateTask} = useActions(tasksThunks)
+    const {removeTask, updateTask} = useActions(tasksThunks)
     const removeTaskHandler = () => removeTask({taskId: props.task.id, todolistId: props.todolistId});
 
-    const changeTaskStatusHandler = (e: ChangeEvent<HTMLInputElement>) =>{
+    const changeTaskStatusHandler = (e: ChangeEvent<HTMLInputElement>) => {
         let status = e.currentTarget.checked ? TaskStatuses.Completed : TaskStatuses.New
-        updateTask({taskId:props.task.id, domainModel: {status}, todolistId:props.todolistId})
+        updateTask({taskId: props.task.id, domainModel: {status}, todolistId: props.todolistId})
     }
 
-    const titleChangeHandler = ((title: string)=>{
-        updateTask({taskId:props.task.id, domainModel: {title}, todolistId:props.todolistId})
+    const titleChangeHandler = ((title: string) => {
+        updateTask({taskId: props.task.id, domainModel: {title}, todolistId: props.todolistId})
     })
 
     return <div key={props.task.id} className={props.task.status === TaskStatuses.Completed ? s.isDone : ''}>
