@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: refactoring">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring: delete callback changeStatus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/api/todolists/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/api/todolists/todolists-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" afterDir="false" />
@@ -175,15 +174,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="5792000" />
-    </task>
-    <task id="LOCAL-00004" summary="add: unit tests for todolistReduser and comments">
-      <option name="closed" value="true" />
-      <created>1692181909747</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1692181909747</updated>
+      <workItem from="1703329542894" duration="6646000" />
     </task>
     <task id="LOCAL-00005" summary="fixed: rename test files">
       <option name="closed" value="true" />
@@ -569,14 +560,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703350690087</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="refactoring: delete callback changeStatus">
+      <option name="closed" value="true" />
+      <created>1703352428424</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1703352428425</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: task-reducer.tsx, bugfix in Todolist.tsx" />
     <MESSAGE value="update: all selectors into separate files" />
     <MESSAGE value="update: clear state when logout" />
     <MESSAGE value="update: fetchTasks in task-reducer, add: create-app-async-thunk.ts" />
@@ -601,7 +599,8 @@
     <MESSAGE value="add: tests for task-reducer" />
     <MESSAGE value="add: tests for todolist-reducer" />
     <MESSAGE value="update: refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: refactoring" />
+    <MESSAGE value="refactoring: delete callback changeStatus" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring: delete callback changeStatus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

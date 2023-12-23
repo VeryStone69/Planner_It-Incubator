@@ -15,7 +15,6 @@ import {
     todolistsSelector,
     isLoggedInTodolistsListSelector
 } from "./Todolist/todolists.selector";
-import {TaskStatuses} from "../../../common/enums/common-enums";
 import {useActions} from "../../../common/hooks/useActions";
 
 export const TodolistsList: React.FC = () => {
@@ -31,10 +30,7 @@ export const TodolistsList: React.FC = () => {
         addTodolist: addTodolistThunk,
     } = useActions(todolistsThunks)
 
-    const {
-        addTask: addTaskThunk,
-        updateTask: updateTaskThunk,
-    } = useActions(tasksThunks)
+    const {addTask: addTaskThunk} = useActions(tasksThunks)
 
 
     useEffect(() => {
@@ -46,10 +42,6 @@ export const TodolistsList: React.FC = () => {
 
     const addTask = useCallback(function (title: string, todolistId: string) {
         addTaskThunk({title, todolistId})
-    }, [])
-
-    const changeTaskTitle = useCallback(function (taskId: string, title: string, todolistId: string) {
-        updateTaskThunk({taskId, domainModel: {title}, todolistId})
     }, [])
 
     const changeFilter = useCallback(function (filter: FilterValuesType, id: string) {
@@ -91,7 +83,7 @@ export const TodolistsList: React.FC = () => {
                                 entityStatus={tl.entityStatus}
                                 filter={tl.filter}
                                 removeTodolist={removeTodolist}
-                                changeTaskTitle={changeTaskTitle}
+                                // changeTaskTitle={changeTaskTitle}
                                 changeTodolistTitle={changeTodolistTitle}
                             />
                         </Paper>

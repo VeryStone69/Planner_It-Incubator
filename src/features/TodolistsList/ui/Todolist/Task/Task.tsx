@@ -13,13 +13,9 @@ import {useActions} from "../../../../../common/hooks/useActions";
 type TaskPropsType = {
     task: TaskType
     todolistId: string
-    changeTaskTitle: (taskId: string, newTitle: string, todolistId: string) => void
     entityStatus: RequestStatusType
 }
 
-// const changeStatus = useCallback(function (taskId: string, status: TaskStatuses, todolistId: string) {
-//     updateTaskThunk({taskId, domainModel: {status}, todolistId})
-// }, [])
 
 export const Task = React.memo((props: TaskPropsType) => {
     const {removeTask,updateTask} = useActions(tasksThunks)
@@ -31,10 +27,9 @@ export const Task = React.memo((props: TaskPropsType) => {
         updateTask({taskId:props.task.id, domainModel: {status}, todolistId:props.todolistId})
     }
 
-
-    const onTitleChangeHandler = useCallback((newValue: string) => {
-        props.changeTaskTitle(props.task.id, newValue, props.todolistId)
-    }, [props.task.id, props.todolistId]);
+    const titleChangeHandler = ((newValue: string)=>{
+        updateTask({taskId:props.task.id, domainModel: {title:newValue}, todolistId:props.todolistId})
+    })
 
     return <div key={props.task.id} className={props.task.status === TaskStatuses.Completed ? 'is-done' : ''}>
         <Checkbox
@@ -43,7 +38,7 @@ export const Task = React.memo((props: TaskPropsType) => {
             onChange={changeTaskHandler}
         />
 
-        <EditableSpan value={props.task.title} onChange={onTitleChangeHandler}/>
+        <EditableSpan value={props.task.title} onChange={titleChangeHandler}/>
         <IconButton onClick={removeTaskHandler} disabled={props.entityStatus === "loading"}>
             <Delete/>
         </IconButton>
