@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring: delete callback updateTask">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: titleChangeHandler, changeTaskHandler in Task.tsx">
+      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" afterDir="false" />
     </list>
@@ -18,6 +19,7 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -41,27 +43,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Jest.todolist-reducer.test.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.todolist-task.test.ts.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/itincubator/FRIDAY&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;D:/itincubator/monday_with_IGOR/my-app/node_modules/react-scripts&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\itincubator\\monday_with_IGOR\\my-app\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Jest.todolist-reducer.test.ts.executor": "Run",
+    "Jest.todolist-task.test.ts.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/itincubator/FRIDAY",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "D:/itincubator/monday_with_IGOR/my-app/node_modules/react-scripts",
+    "nodejs_package_manager_path": "yarn",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\itincubator\\monday_with_IGOR\\my-app\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\api" />
@@ -172,15 +175,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="7563000" />
-    </task>
-    <task id="LOCAL-00006" summary="update: reduser and tests">
-      <option name="closed" value="true" />
-      <created>1692260273792</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1692260273792</updated>
+      <workItem from="1703329542894" duration="9858000" />
     </task>
     <task id="LOCAL-00007" summary="add: redux,useCallback; update: unit tests">
       <option name="closed" value="true" />
@@ -566,14 +561,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703353205468</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="update: titleChangeHandler, changeTaskHandler in Task.tsx">
+      <option name="closed" value="true" />
+      <created>1703357034090</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1703357034090</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: clear state when logout" />
     <MESSAGE value="update: fetchTasks in task-reducer, add: create-app-async-thunk.ts" />
     <MESSAGE value="update: addTask in task-reducer, update: addTask in TodolistsList.tsx" />
     <MESSAGE value="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx" />
@@ -598,7 +600,8 @@
     <MESSAGE value="update: refactoring" />
     <MESSAGE value="refactoring: delete callback changeStatus" />
     <MESSAGE value="refactoring: delete callback updateTask" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring: delete callback updateTask" />
+    <MESSAGE value="update: titleChangeHandler, changeTaskHandler in Task.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: titleChangeHandler, changeTaskHandler in Task.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -652,6 +655,18 @@
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/todolists.selector.ts</url>
           <line>2</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx</url>
+          <line>42</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx</url>
+          <line>46</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
