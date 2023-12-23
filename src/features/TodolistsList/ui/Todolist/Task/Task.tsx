@@ -22,13 +22,12 @@ export const Task = React.memo((props: TaskPropsType) => {
     const removeTaskHandler = () => removeTask({taskId: props.task.id, todolistId: props.todolistId});
 
     const changeTaskHandler = (e: ChangeEvent<HTMLInputElement>) =>{
-        let newIsDoneValue = e.currentTarget.checked;
-        let status = newIsDoneValue ? TaskStatuses.Completed : TaskStatuses.New
+        let status = e.currentTarget.checked ? TaskStatuses.Completed : TaskStatuses.New
         updateTask({taskId:props.task.id, domainModel: {status}, todolistId:props.todolistId})
     }
 
-    const titleChangeHandler = ((newValue: string)=>{
-        updateTask({taskId:props.task.id, domainModel: {title:newValue}, todolistId:props.todolistId})
+    const titleChangeHandler = ((title: string)=>{
+        updateTask({taskId:props.task.id, domainModel: {title}, todolistId:props.todolistId})
     })
 
     return <div key={props.task.id} className={props.task.status === TaskStatuses.Completed ? 'is-done' : ''}>
