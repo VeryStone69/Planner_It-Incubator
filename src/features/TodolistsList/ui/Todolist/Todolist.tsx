@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect} from 'react'
 import {AddItemForm} from '../../../../common/components'
 import {EditableSpan} from '../../../../common/components'
-import {Task} from './Task/Task'
+import {Task} from './Tasks/Task/Task'
 import {FilterValuesType, todolistsThunks} from '../../model/todolists-reducer'
 import IconButton from '@mui/material/IconButton';
 import {Delete} from '@mui/icons-material';
@@ -11,6 +11,7 @@ import {TaskStatuses} from "../../../../common/enums/common-enums";
 import {useActions} from "../../../../common/hooks/useActions";
 import {TaskType} from "../../api/tasks/tasks-api.types";
 import {FilterTasksButton} from "./FilterTasksButton/FilterTasksButton";
+import {Tasks} from "./Tasks/Tasks";
 
 type PropsType = {
     id: string
@@ -39,14 +40,7 @@ export const Todolist = React.memo(function (props: PropsType) {
         changeTodolistTitle({id: props.id, title})
     }
 
-    let tasksForTodolist = props.tasks
 
-    if (props.filter === 'active') {
-        tasksForTodolist = props.tasks.filter(t => t.status === TaskStatuses.New)
-    }
-    if (props.filter === 'completed') {
-        tasksForTodolist = props.tasks.filter(t => t.status === TaskStatuses.Completed)
-    }
 
     return <div>
 
@@ -55,16 +49,8 @@ export const Todolist = React.memo(function (props: PropsType) {
                 <Delete/>
             </IconButton>
         </h3>
-
         <AddItemForm addItem={addTaskCallback} entityStatus={props.entityStatus}/>
-        <div>
-            {
-                tasksForTodolist.map(t => <Task key={t.id} task={t} todolistId={props.id}
-                                                entityStatus={props.entityStatus}
-
-                />)
-            }
-        </div>
+        <Tasks tasks={props.tasks} id = {props.id} entityStatus={props.entityStatus} filter={props.filter}/>
         <div style={{paddingTop: '10px'}}>
             <FilterTasksButton filter={props.filter} id={props.id}/>
         </div>

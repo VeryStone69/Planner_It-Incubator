@@ -1,13 +1,13 @@
 import React, {ChangeEvent} from 'react'
-import {EditableSpan} from '../../../../../common/components'
+import {EditableSpan} from '../../../../../../common/components'
 import {Delete} from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import Checkbox from '@mui/material/Checkbox';
-import {RequestStatusType} from "../../../../../app/app-reducer";
-import {TaskStatuses} from "../../../../../common/enums/common-enums";
-import {TaskType} from "../../../api/tasks/tasks-api.types";
-import {tasksThunks} from "../../../model/tasks-reducer";
-import {useActions} from "../../../../../common/hooks/useActions";
+import {RequestStatusType} from "../../../../../../app/app-reducer";
+import {TaskStatuses} from "../../../../../../common/enums/common-enums";
+import {TaskType} from "../../../../api/tasks/tasks-api.types";
+import {tasksThunks} from "../../../../model/tasks-reducer";
+import {useActions} from "../../../../../../common/hooks/useActions";
 import s from "./Task.module.css"
 
 type TaskPropsType = {

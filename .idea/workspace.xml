@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx">
-      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/FilterTasksButton/FilterTasksButton.tsx" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="decomposition and refactoring: add FilterTasksButton.tsx">
+      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Tasks/Tasks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,15 +175,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="18521000" />
-    </task>
-    <task id="LOCAL-00009" summary="update: refactoring">
-      <option name="closed" value="true" />
-      <created>1693506783851</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1693506783851</updated>
+      <workItem from="1703329542894" duration="19519000" />
     </task>
     <task id="LOCAL-00010" summary="add: thunk creator for getTodolists,remove TDs, addTasks">
       <option name="closed" value="true" />
@@ -570,14 +561,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703367942135</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="decomposition and refactoring: add FilterTasksButton.tsx">
+      <option name="closed" value="true" />
+      <created>1703422352648</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1703422352648</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx" />
     <MESSAGE value="update: refactoring error handling files" />
     <MESSAGE value="update: refactoring hooks" />
     <MESSAGE value="update: refactoring the folder structure in the project" />
@@ -602,7 +600,8 @@
     <MESSAGE value="update: titleChangeHandler, changeTaskHandler in Task.tsx" />
     <MESSAGE value="update: change name function and add style Task.tsx" />
     <MESSAGE value="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx" />
+    <MESSAGE value="decomposition and refactoring: add FilterTasksButton.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="decomposition and refactoring: add FilterTasksButton.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
