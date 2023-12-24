@@ -1,7 +1,6 @@
 import {BaseThunkAPI} from "@reduxjs/toolkit/dist/createAsyncThunk";
 import {AppDispatch, AppRootStateType} from "../../app/store";
 import {BaseResponseType} from "../types";
-import {appActions} from "../../app/app-reducer";
 import {handleServerNetworkError} from "./handle-server-network-error";
 
 /**

@@ -22,26 +22,26 @@ const slice = createSlice({
             state.isInitialized = action.payload.isInitialized;
         }
     },
-    extraReducers: (builder)=>{
+    extraReducers: (builder) => {
         builder.addMatcher(
-            (action:AnyAction)=>{
+            (action: AnyAction) => {
                 return action.type.endsWith("/pending")
             },
-            (state, action)=>{
+            (state) => {
                 state.status = "loading"
             })
             .addMatcher(
-                (action:AnyAction)=>{
+                (action: AnyAction) => {
                     return action.type.endsWith("/rejected")
                 },
-                (state,action)=>{
+                (state) => {
                     state.status = "failed"
                 })
             .addMatcher(
-                (action:AnyAction)=>{
+                (action: AnyAction) => {
                     return action.type.endsWith("/fulfilled")
                 },
-                (state,action)=>{
+                (state) => {
                     state.status = "succeeded"
                 })
     }
