@@ -9,6 +9,8 @@ import {RemoveTaskArgType} from "../../../common/types";
 import {thunkTryCatch} from "../../../common/utils";
 import {AddTaskArgType, TaskType, UpdateTaskArgType, UpdateTaskModelType} from "../api/tasks/tasks-api.types";
 import {tasksApi} from "../api/tasks/tasks-api";
+import {TodolistType} from "../api/todolists/todolists-api.types";
+import {todolistsAPI} from "../api/todolists/todolists-api";
 
 
 const slice = createSlice({
@@ -106,18 +108,14 @@ const removeTask = createAppAsyncThunk<RemoveTaskArgType, RemoveTaskArgType>(
 
 const addTask = createAppAsyncThunk<{ task: TaskType }, AddTaskArgType>(
     `${slice.name}/addTask`,
-    async (arg, thunkAPI) => {
-        const {dispatch, rejectWithValue} = thunkAPI;
-        return thunkTryCatch(thunkAPI, async () => {
+    async (arg, {rejectWithValue}) => {
             const res = await tasksApi.createTask(arg);
             if (res.data.resultCode === ResultCode.Success) {
                 const task = res.data.data.item;
                 return {task};
             } else {
-                handleServerAppError(res.data, dispatch);
-                return rejectWithValue(null);
+                return rejectWithValue(res.data);
             }
-        })
     });
 
 

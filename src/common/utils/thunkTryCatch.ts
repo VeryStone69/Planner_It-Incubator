@@ -21,7 +21,8 @@ export const thunkTryCatch = async <T>(
     const {dispatch, rejectWithValue} = thunkAPI;
     try {
         return await logic();
-    } catch (e) {
+    }
+        catch (e) {
         handleServerNetworkError(e, dispatch);
         return rejectWithValue(null);
     }

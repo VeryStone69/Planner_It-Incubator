@@ -3,9 +3,10 @@ import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import { AddBox } from '@mui/icons-material';
 import {RequestStatusType} from "../../../app/app-reducer";
+import {BaseResponseType} from "../../types";
 
 type AddItemFormPropsType = {
-    addItem: (title: string) => void
+    addItem: (title: string) => Promise<unknown>
     entityStatus?: RequestStatusType
 }
 
@@ -14,10 +15,25 @@ export const AddItemForm = React.memo(function (props: AddItemFormPropsType) {
     let [title, setTitle] = useState('')
     let [error, setError] = useState<string | null>(null)
 
-    const addItem = () => {
+    // const addItemHandler = () => {
+    //     if (title.trim() !== '') {
+    //         props.addItem(title);
+    //         setTitle('');
+    //     } else {
+    //         setError('Title is required');
+    //     }
+    // }
+    const addItemHandler = () => {
         if (title.trim() !== '') {
-            props.addItem(title);
-            setTitle('');
+            props.addItem(title)
+                .then((res) => {
+                    setTitle('');
+                })
+                .catch((err:BaseResponseType) => {
+                    if (err?.resultCode) {
+                        setError(err.messages[0]);
+                    }
+                })
         } else {
             setError('Title is required');
         }
@@ -32,7 +48,7 @@ export const AddItemForm = React.memo(function (props: AddItemFormPropsType) {
             setError(null);
         }
         if (e.charCode === 13) {
-            addItem();
+            addItemHandler();
         }
     }
 
@@ -45,7 +61,7 @@ export const AddItemForm = React.memo(function (props: AddItemFormPropsType) {
                    label="Title"
                    helperText={error}
         />
-        <IconButton color="primary" onClick={addItem} disabled={props.entityStatus === "loading"}>
+        <IconButton color="primary" onClick={addItemHandler} disabled={props.entityStatus === "loading"}>
             <AddBox/>
         </IconButton>
     </div>

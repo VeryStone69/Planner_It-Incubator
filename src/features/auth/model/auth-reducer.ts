@@ -22,24 +22,19 @@ const slice = createSlice({
                     state.isLoggedIn = action.payload.isLoggedIn
                 }
             )
-
     }
 
 })
 
 const login = createAppAsyncThunk<{ isLoggedIn: boolean }, LoginDataType>(
     `${slice.name}/login`,
-    async (arg, thunkAPI) => {
-        const {dispatch, rejectWithValue} = thunkAPI;
-        return thunkTryCatch(thunkAPI, async () => {
+    async (arg, {rejectWithValue}) => {
             const res = await authAPI.login(arg)
             if (res.data.resultCode === ResultCode.Success) {
                 return {isLoggedIn: true}
             } else {
-                handleServerAppError(res.data, dispatch)
                 return rejectWithValue(res.data);
             }
-        })
     });
 
 const logout = createAppAsyncThunk<{ isLoggedIn: boolean }, undefined>(
@@ -62,16 +57,13 @@ const initializeApp = createAppAsyncThunk<{
     isLoggedIn: boolean
 }, undefined>(`${slice.name}/initializeApp`, async (_, thunkAPI) => {
     const {dispatch, rejectWithValue} = thunkAPI;
-    return thunkTryCatch(thunkAPI, async () => {
-        const res = await authAPI.me();
+        const res = await authAPI.me()
         if (res.data.resultCode === ResultCode.Success) {
             return {isLoggedIn: true};
         } else {
-            return rejectWithValue(null);
+            return rejectWithValue(res.data);
         }
-    }).finally(() => {
-        dispatch(appActions.setInitialized({isInitialized: true}));
-    });
+
 });
 
 export const authReducer = slice.reducer;

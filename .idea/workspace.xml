@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring app-reducer.tsx">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring auth-reducer.tsx: add isAnyOf">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/thunkTryCatch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/thunkTryCatch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,15 +182,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="29156000" />
-    </task>
-    <task id="LOCAL-00015" summary="add: error display">
-      <option name="closed" value="true" />
-      <created>1698306569273</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1698306569273</updated>
+      <workItem from="1703329542894" duration="39290000" />
     </task>
     <task id="LOCAL-00016" summary="add: error handling">
       <option name="closed" value="true" />
@@ -567,14 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703435997833</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="refactoring auth-reducer.tsx: add isAnyOf">
+      <option name="closed" value="true" />
+      <created>1703436322392</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1703436322392</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: addTodolist,changeTodolistTitle  in todolists-reducer.ts" />
     <MESSAGE value="update: login in auth-reducer.ts" />
     <MESSAGE value="update: initializeApp in auth-reducer.ts" />
     <MESSAGE value="update: store.ts (new types for store,dispatch)" />
@@ -599,7 +607,8 @@
     <MESSAGE value="refactoring thunkTryCatch.ts and add addMatcher in app-reducer.tsx" />
     <MESSAGE value="refactoring reducers: delete dispatch(appActions.setAppStatus({status:" />
     <MESSAGE value="refactoring app-reducer.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring app-reducer.tsx" />
+    <MESSAGE value="refactoring auth-reducer.tsx: add isAnyOf" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring auth-reducer.tsx: add isAnyOf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -655,10 +664,10 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx</url>
-          <line>30</line>
+          <url>file://$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts</url>
+          <line>49</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
