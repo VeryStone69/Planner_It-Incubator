@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="decomposition and refactoring: add FilterTasksButton.tsx">
-      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Tasks/Tasks.tsx" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="decomposition and refactoring: add Tasks.tsx">
+      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/TodolistTitle/TodolistTitle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" afterDir="false" />
     </list>
@@ -70,11 +70,11 @@
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\ui\Todolist\Tasks" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\api\todolists" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\api\tasks" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\model" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\auth\ui" />
-      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\auth\model" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -175,15 +175,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="19519000" />
-    </task>
-    <task id="LOCAL-00010" summary="add: thunk creator for getTodolists,remove TDs, addTasks">
-      <option name="closed" value="true" />
-      <created>1696017102041</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1696017102041</updated>
+      <workItem from="1703329542894" duration="20490000" />
     </task>
     <task id="LOCAL-00011" summary="update: full refactoring">
       <option name="closed" value="true" />
@@ -569,14 +561,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703422352648</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="decomposition and refactoring: add Tasks.tsx">
+      <option name="closed" value="true" />
+      <created>1703423419404</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1703423419404</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: refactoring error handling files" />
     <MESSAGE value="update: refactoring hooks" />
     <MESSAGE value="update: refactoring the folder structure in the project" />
     <MESSAGE value="update: removeTask in task-reducer.ts" />
@@ -601,7 +600,8 @@
     <MESSAGE value="update: change name function and add style Task.tsx" />
     <MESSAGE value="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx" />
     <MESSAGE value="decomposition and refactoring: add FilterTasksButton.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="decomposition and refactoring: add FilterTasksButton.tsx" />
+    <MESSAGE value="decomposition and refactoring: add Tasks.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="decomposition and refactoring: add Tasks.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
