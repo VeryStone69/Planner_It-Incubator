@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring reducers: delete dispatch(appActions.setAppStatus({status:">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.tsx" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring app-reducer.tsx">
+      <change beforePath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,15 +173,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="28975000" />
-    </task>
-    <task id="LOCAL-00014" summary="add: preloader for all thunk creators">
-      <option name="closed" value="true" />
-      <created>1698303502698</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1698303502698</updated>
+      <workItem from="1703329542894" duration="29156000" />
     </task>
     <task id="LOCAL-00015" summary="add: error display">
       <option name="closed" value="true" />
@@ -568,14 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703435295156</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="refactoring app-reducer.tsx">
+      <option name="closed" value="true" />
+      <created>1703435997833</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1703435997833</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: fetchTodolist and removeTodolist in todolists-reducer.ts" />
     <MESSAGE value="update: addTodolist,changeTodolistTitle  in todolists-reducer.ts" />
     <MESSAGE value="update: login in auth-reducer.ts" />
     <MESSAGE value="update: initializeApp in auth-reducer.ts" />
@@ -600,7 +598,8 @@
     <MESSAGE value="decomposition and refactoring: add TodolistTitle.tsx" />
     <MESSAGE value="refactoring thunkTryCatch.ts and add addMatcher in app-reducer.tsx" />
     <MESSAGE value="refactoring reducers: delete dispatch(appActions.setAppStatus({status:" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring reducers: delete dispatch(appActions.setAppStatus({status:" />
+    <MESSAGE value="refactoring app-reducer.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring app-reducer.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
