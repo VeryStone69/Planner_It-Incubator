@@ -14,7 +14,7 @@ import {
 } from "./Todolist/todolists.selector";
 import {useActions} from "../../../common/hooks/useActions";
 
-export const TodolistsList: React.FC = () => {
+export const TodolistsList = () => {
     const isLoggedIn = useAppSelector<boolean>(isLoggedInTodolistsListSelector)
     const todolists = useAppSelector<Array<TodolistDomainType>>(todolistsSelector)
     const tasks = useAppSelector<TasksStateType>(tasksSelector)

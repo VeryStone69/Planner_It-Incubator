@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: change name function and add style Task.tsx">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx">
+      <change afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/FilterTasksButton/FilterTasksButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Task/Task.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/TodolistsList.tsx" afterDir="false" />
     </list>
@@ -18,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -176,15 +176,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="13472000" />
-    </task>
-    <task id="LOCAL-00008" summary="update: typing action in: todolistReduser.ts, taskReducer.ts">
-      <option name="closed" value="true" />
-      <created>1693481746121</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1693481746121</updated>
+      <workItem from="1703329542894" duration="18521000" />
     </task>
     <task id="LOCAL-00009" summary="update: refactoring">
       <option name="closed" value="true" />
@@ -570,14 +562,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703361807232</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx">
+      <option name="closed" value="true" />
+      <created>1703367942135</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1703367942135</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: addTask in task-reducer, update: addTask in TodolistsList.tsx" />
     <MESSAGE value="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx" />
     <MESSAGE value="update: refactoring error handling files" />
     <MESSAGE value="update: refactoring hooks" />
@@ -602,7 +601,8 @@
     <MESSAGE value="refactoring: delete callback updateTask" />
     <MESSAGE value="update: titleChangeHandler, changeTaskHandler in Task.tsx" />
     <MESSAGE value="update: change name function and add style Task.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: change name function and add style Task.tsx" />
+    <MESSAGE value="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
