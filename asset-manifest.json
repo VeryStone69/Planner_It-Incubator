@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TodoList_It-Incubator/static/css/main.7c308d7e.css",
-    "main.js": "/TodoList_It-Incubator/static/js/main.83434963.js",
+    "main.css": "/TodoList_It-Incubator/static/css/main.e92341d1.css",
+    "main.js": "/TodoList_It-Incubator/static/js/main.cad540ea.js",
     "static/js/496.2d3ae432.chunk.js": "/TodoList_It-Incubator/static/js/496.2d3ae432.chunk.js",
     "index.html": "/TodoList_It-Incubator/index.html",
-    "main.7c308d7e.css.map": "/TodoList_It-Incubator/static/css/main.7c308d7e.css.map",
-    "main.83434963.js.map": "/TodoList_It-Incubator/static/js/main.83434963.js.map",
+    "main.e92341d1.css.map": "/TodoList_It-Incubator/static/css/main.e92341d1.css.map",
+    "main.cad540ea.js.map": "/TodoList_It-Incubator/static/js/main.cad540ea.js.map",
     "496.2d3ae432.chunk.js.map": "/TodoList_It-Incubator/static/js/496.2d3ae432.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c308d7e.css",
-    "static/js/main.83434963.js"
+    "static/css/main.e92341d1.css",
+    "static/js/main.cad540ea.js"
   ]
 }
