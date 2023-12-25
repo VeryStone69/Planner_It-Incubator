@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="decomposition: add Routing.tsx">
-      <change afterPath="$PROJECT_DIR$/src/app/ui/Header/Header.module.css" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update Routing.tsx, add: Header.module.css">
+      <change afterPath="$PROJECT_DIR$/src/app/ui/NotFoundPage/NotFoundPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/ui/NotFoundPage/NotFoundPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/ui/NotFoundPage/svg/404.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/itincubator/FRIDAY",
+    "last_opened_file_path": "D:/itincubator/monday_with_IGOR/my-app/src/app/ui/NotFoundPage/svg",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -78,6 +79,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\app\ui\NotFoundPage\svg" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -197,15 +199,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="59089000" />
-    </task>
-    <task id="LOCAL-00028" summary="update: clear state when logout">
-      <option name="closed" value="true" />
-      <created>1700155954369</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1700155954369</updated>
+      <workItem from="1703329542894" duration="61113000" />
     </task>
     <task id="LOCAL-00029" summary="update: fetchTasks in task-reducer, add: create-app-async-thunk.ts">
       <option name="closed" value="true" />
@@ -591,14 +585,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703537112762</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="update Routing.tsx, add: Header.module.css">
+      <option name="closed" value="true" />
+      <created>1703540279097</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1703540279097</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: tests for todolist-reducer" />
     <MESSAGE value="update: refactoring" />
     <MESSAGE value="refactoring: delete callback changeStatus" />
     <MESSAGE value="refactoring: delete callback updateTask" />
@@ -623,7 +624,8 @@
     <MESSAGE value="decomposition: add Header.tsx" />
     <MESSAGE value="refactoring: Header.tsx and App.tsx" />
     <MESSAGE value="decomposition: add Routing.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="decomposition: add Routing.tsx" />
+    <MESSAGE value="update Routing.tsx, add: Header.module.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Routing.tsx, add: Header.module.css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
