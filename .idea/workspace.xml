@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring: Header.tsx and App.tsx">
-      <change afterPath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="decomposition: add Routing.tsx">
+      <change afterPath="$PROJECT_DIR$/src/app/ui/Header/Header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -195,15 +197,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="56111000" />
-    </task>
-    <task id="LOCAL-00027" summary="update: all selectors into separate files">
-      <option name="closed" value="true" />
-      <created>1700152881501</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1700152881501</updated>
+      <workItem from="1703329542894" duration="59089000" />
     </task>
     <task id="LOCAL-00028" summary="update: clear state when logout">
       <option name="closed" value="true" />
@@ -589,14 +583,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703536414316</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="decomposition: add Routing.tsx">
+      <option name="closed" value="true" />
+      <created>1703537112762</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1703537112762</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: tests for task-reducer" />
     <MESSAGE value="add: tests for todolist-reducer" />
     <MESSAGE value="update: refactoring" />
     <MESSAGE value="refactoring: delete callback changeStatus" />
@@ -621,7 +622,8 @@
     <MESSAGE value="update: useColorMode.ts - add local storage" />
     <MESSAGE value="decomposition: add Header.tsx" />
     <MESSAGE value="refactoring: Header.tsx and App.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring: Header.tsx and App.tsx" />
+    <MESSAGE value="decomposition: add Routing.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="decomposition: add Routing.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

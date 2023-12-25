@@ -3,9 +3,3 @@
     display: flex;
     justify-content: space-between;
 }
-.placeholder {
-    display: inline-block;
-    padding: 6px 8px;
-    width: 64px;
-    height: 36px;
-}

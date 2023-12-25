@@ -8,6 +8,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import LinearProgress from "@mui/material/LinearProgress";
 import AppBar from "@mui/material/AppBar";
 import React from "react";
+import s from "./Header.module.css"
 import {useAppSelector} from "../../store";
 import {RequestStatusType} from "../../model/app-reducer";
 import {isLoggedInAppSelector, statusSelector} from "../../model/app.selector";
@@ -39,7 +40,7 @@ export const Header = (props: PropsType) => {
             <Typography variant="h6">Todolist</Typography>
             {isLoggedIn ?
                 <Button onClick={logOutHandler} color="inherit"><LogoutIcon/></Button>
-                : <div className="placeholder"></div>
+                : <div className={s.placeholder}></div>
             }
         </Toolbar>
         {status === 'loading' && <LinearProgress/>}
