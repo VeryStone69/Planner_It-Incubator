@@ -8,14 +8,8 @@ import FormLabel from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {Navigate} from "react-router-dom";
-import {useAppSelector} from "../../../app/store";
-import {isLoggedInLoginSelector} from "../model/auth-selector";
 import {useLogin} from "../lib/useLogin";
-// type FormikErrorType = {
-//     email?: string
-//     password?: string
-//     rememberMe?: boolean
-// }
+
 
 export const Login = () => {
 

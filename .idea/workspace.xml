@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring all reducers">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="changing the name of props typing in components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/components/EditableSpan/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/EditableSpan/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,15 +195,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="43404000" />
-    </task>
-    <task id="LOCAL-00019" summary="add: Formik: form,resetForm, getFieldProps">
-      <option name="closed" value="true" />
-      <created>1698872135945</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1698872135945</updated>
+      <workItem from="1703329542894" duration="43954000" />
     </task>
     <task id="LOCAL-00020" summary="add: Auth flow: login,authme,logout">
       <option name="closed" value="true" />
@@ -589,14 +581,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703523388659</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="changing the name of props typing in components">
+      <option name="closed" value="true" />
+      <created>1703523886591</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1703523886591</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: types" />
     <MESSAGE value="update: refactoring (add thunkTryCatch.ts and update auth-reducer.ts, tasks-reducer.ts)" />
     <MESSAGE value="update: todolists-reducer.ts" />
     <MESSAGE value="update: change typePrefix in auth/tasks-reducer" />
@@ -621,7 +620,8 @@
     <MESSAGE value="refactoring error handling" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="refactoring all reducers" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring all reducers" />
+    <MESSAGE value="changing the name of props typing in components" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing the name of props typing in components" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
