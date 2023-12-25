@@ -1,4 +1,4 @@
-import {RequestStatusType} from "../../../app/app-reducer";
+import {RequestStatusType} from "../../../app/model/app-reducer";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {clearTodolistsAndTasks} from "../../../common/actions/common.actions";
 import {ResultCode} from "../../../common/enums/common-enums";

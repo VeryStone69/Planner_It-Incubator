@@ -1,7 +1,7 @@
 import {Task} from "./Task/Task";
 import React from "react";
 import {TaskType} from "../../../api/tasks/tasks-api.types";
-import {RequestStatusType} from "../../../../../app/app-reducer";
+import {RequestStatusType} from "../../../../../app/model/app-reducer";
 import {TaskStatuses} from "../../../../../common/enums/common-enums";
 import {FilterValuesType} from "../../../model/todolists-reducer";
 

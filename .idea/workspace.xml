@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring">
-      <change afterPath="$PROJECT_DIR$/src/features/auth/ui/Login.module.css" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add styles for Login.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/app-reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/app.selector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/ErrorSnackbar/ErrorSnackbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Tasks/Task/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Tasks/Task/Task.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Tasks/Tasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Tasks/Tasks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/TodolistTitle/TodolistTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/TodolistTitle/TodolistTitle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/app-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/app-reducer.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +94,11 @@
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\app\model" />
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\app\ui" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\ui\Todolist\Tasks" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\api\todolists" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\api\tasks" />
-      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\model" />
-      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\auth\ui" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.tasks should be added for todolist">
@@ -196,15 +210,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="45054000" />
-    </task>
-    <task id="LOCAL-00021" summary="add: disabled button for login">
-      <option name="closed" value="true" />
-      <created>1698914616244</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1698914616244</updated>
+      <workItem from="1703329542894" duration="50310000" />
     </task>
     <task id="LOCAL-00022" summary="fix: loading todolists, deleting todolists when exiting the application">
       <option name="closed" value="true" />
@@ -590,14 +596,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703524297326</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="add styles for Login.tsx">
+      <option name="closed" value="true" />
+      <created>1703525371810</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1703525371810</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: refactoring (add thunkTryCatch.ts and update auth-reducer.ts, tasks-reducer.ts)" />
     <MESSAGE value="update: todolists-reducer.ts" />
     <MESSAGE value="update: change typePrefix in auth/tasks-reducer" />
     <MESSAGE value="add: new hook useActions.ts and refactoring dispatch methods in components" />
@@ -622,7 +635,8 @@
     <MESSAGE value="refactoring all reducers" />
     <MESSAGE value="changing the name of props typing in components" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="add styles for Login.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add styles for Login.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

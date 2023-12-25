@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect} from 'react'
 import {AddItemForm} from '../../../../common/components'
 import {FilterValuesType} from '../../model/todolists-reducer'
-import {RequestStatusType} from "../../../../app/app-reducer";
+import {RequestStatusType} from "../../../../app/model/app-reducer";
 import {tasksThunks} from "../../model/tasks-reducer";
 import {useActions} from "../../../../common/hooks/useActions";
 import {TaskType} from "../../api/tasks/tasks-api.types";

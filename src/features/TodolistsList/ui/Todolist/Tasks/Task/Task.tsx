@@ -3,7 +3,7 @@ import {EditableSpan} from '../../../../../../common/components'
 import {Delete} from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import Checkbox from '@mui/material/Checkbox';
-import {RequestStatusType} from "../../../../../../app/app-reducer";
+import {RequestStatusType} from "../../../../../../app/model/app-reducer";
 import {TaskStatuses} from "../../../../../../common/enums/common-enums";
 import {TaskType} from "../../../../api/tasks/tasks-api.types";
 import {tasksThunks} from "../../../../model/tasks-reducer";

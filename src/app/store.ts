@@ -1,7 +1,7 @@
 import {tasksReducer} from '../features/TodolistsList/model/tasks-reducer';
 import {todolistsReducer} from '../features/TodolistsList/model/todolists-reducer';
 import {TypedUseSelectorHook,useSelector} from "react-redux";
-import {appReducer} from "./app-reducer";
+import {appReducer} from "./model/app-reducer";
 import {authReducer} from "../features/auth/model/auth-reducer";
 import {configureStore} from "@reduxjs/toolkit";
 

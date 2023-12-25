@@ -4,7 +4,7 @@ import {Delete} from "@mui/icons-material";
 import React, {useCallback} from "react";
 import {useActions} from "../../../../../common/hooks/useActions";
 import {todolistsThunks} from "../../../model/todolists-reducer";
-import {RequestStatusType} from "../../../../../app/app-reducer";
+import {RequestStatusType} from "../../../../../app/model/app-reducer";
 
 type PropsType = {
     title: string

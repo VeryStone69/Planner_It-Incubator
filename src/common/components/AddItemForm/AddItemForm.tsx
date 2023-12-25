@@ -2,7 +2,7 @@ import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import {AddBox} from '@mui/icons-material';
-import {RequestStatusType} from "../../../app/app-reducer";
+import {RequestStatusType} from "../../../app/model/app-reducer";
 import {BaseResponseType} from "../../types";
 
 type PropsType = {

@@ -1,5 +1,5 @@
 import {AnyAction, createSlice, isAnyOf, isFulfilled, isPending, isRejected, PayloadAction} from "@reduxjs/toolkit";
-import {authThunks} from "../features/auth/model/auth-reducer";
+import {authThunks} from "../../features/auth/model/auth-reducer";
 
 export type RequestStatusType = 'idle' | 'loading' | 'succeeded' | 'failed'
 

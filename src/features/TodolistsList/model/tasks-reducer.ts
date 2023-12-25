@@ -1,4 +1,4 @@
-import {appActions} from "../../../app/app-reducer";
+import {appActions} from "../../../app/model/app-reducer";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit"
 import {todolistsThunks} from "./todolists-reducer";
 import {clearTodolistsAndTasks} from "../../../common/actions/common.actions";
