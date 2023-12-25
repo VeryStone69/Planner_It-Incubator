@@ -10,14 +10,14 @@ import {tasksThunks} from "../../../../model/tasks-reducer";
 import {useActions} from "../../../../../../common/hooks/useActions";
 import s from "./Task.module.css"
 
-type TaskPropsType = {
+type PropsType = {
     task: TaskType
     todolistId: string
     entityStatus: RequestStatusType
 }
 
 
-export const Task = React.memo((props: TaskPropsType) => {
+export const Task = React.memo((props: PropsType) => {
     const {removeTask, updateTask} = useActions(tasksThunks)
     const removeTaskHandler = () => removeTask({taskId: props.task.id, todolistId: props.todolistId});
 

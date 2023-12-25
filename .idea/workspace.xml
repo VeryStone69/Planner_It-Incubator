@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring all reducers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/thunkTryCatch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/thunkTryCatch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/app-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/app-reducer.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/task-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/task-reducer.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/todolist-task.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/todolist-task.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/EditableSpan/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/EditableSpan/EditableSpan.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,15 +195,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="43091000" />
-    </task>
-    <task id="LOCAL-00018" summary="add: routing, 404, login page">
-      <option name="closed" value="true" />
-      <created>1698871511047</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1698871511047</updated>
+      <workItem from="1703329542894" duration="43404000" />
     </task>
     <task id="LOCAL-00019" summary="add: Formik: form,resetForm, getFieldProps">
       <option name="closed" value="true" />
@@ -599,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703456816099</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="refactoring all reducers">
+      <option name="closed" value="true" />
+      <created>1703523388659</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1703523388659</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

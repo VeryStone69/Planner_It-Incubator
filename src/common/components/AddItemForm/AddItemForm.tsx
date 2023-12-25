@@ -5,12 +5,12 @@ import {AddBox} from '@mui/icons-material';
 import {RequestStatusType} from "../../../app/app-reducer";
 import {BaseResponseType} from "../../types";
 
-type AddItemFormPropsType = {
+type PropsType = {
     addItem: (title: string) => Promise<unknown>
     entityStatus?: RequestStatusType
 }
 
-export const AddItemForm = React.memo(function (props: AddItemFormPropsType) {
+export const AddItemForm = React.memo(function (props: PropsType) {
 
     let [title, setTitle] = useState('')
     let [error, setError] = useState<string | null>(null)
