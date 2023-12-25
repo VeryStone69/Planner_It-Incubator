@@ -9,6 +9,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {Navigate} from "react-router-dom";
 import {useLogin} from "../lib/useLogin";
+import s from "./Login.module.css"
 
 
 export const Login = () => {
@@ -24,12 +25,13 @@ export const Login = () => {
                     <FormLabel>
                         <p>To log in get registered
                             <a href={'https://social-network.samuraijs.com/'}
+                               className={s.createAccountLink}
                                target={'_blank'}> here
                             </a>
                         </p>
                         <p>or use common test account credentials:</p>
-                        <p>Email: free@samuraijs.com</p>
-                        <p>Password: free</p>
+                        <p><b>Email:</b> free@samuraijs.com</p>
+                        <p><b>Password:</b> free</p>
                     </FormLabel>
                     <FormGroup>
                         <TextField label="Email"
