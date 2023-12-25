@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: custom hook useColorMode.ts">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: useColorMode.ts - add local storage">
+      <change afterPath="$PROJECT_DIR$/src/app/ui/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/lib/useColorMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/useColorMode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -68,7 +71,7 @@
     "nodejs_package_manager_path": "yarn",
     "npm.deploy.executor": "Run",
     "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
     "ts.external.directory.path": "D:\\itincubator\\monday_with_IGOR\\my-app\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -194,15 +197,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="51660000" />
-    </task>
-    <task id="LOCAL-00024" summary="add: type AppThunk in store, update: auth-reducer.ts to RTK">
-      <option name="closed" value="true" />
-      <created>1699905586066</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1699905586066</updated>
+      <workItem from="1703329542894" duration="55102000" />
     </task>
     <task id="LOCAL-00025" summary="update: app-reducer.tsx: add redux toolkit">
       <option name="closed" value="true" />
@@ -588,14 +583,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703531765690</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="update: useColorMode.ts - add local storage">
+      <option name="closed" value="true" />
+      <created>1703532461172</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1703532461172</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: new hook useActions.ts and refactoring dispatch methods in components" />
     <MESSAGE value="add: comments for utils" />
     <MESSAGE value="add: tests for app-reducer" />
     <MESSAGE value="add: tests for task-reducer" />
@@ -620,7 +622,8 @@
     <MESSAGE value="add styles for Login.tsx" />
     <MESSAGE value="decomposition App, delete MenuIcon, add logout icon" />
     <MESSAGE value="add: custom hook useColorMode.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: custom hook useColorMode.ts" />
+    <MESSAGE value="update: useColorMode.ts - add local storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: useColorMode.ts - add local storage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

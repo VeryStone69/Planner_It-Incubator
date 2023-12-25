@@ -23,23 +23,19 @@ import {statusSelector, isInitializedSelector, isLoggedInAppSelector} from "../m
 import {useActions} from "../../common/hooks/useActions";
 import LogoutIcon from '@mui/icons-material/Logout';
 import {useColorMode} from "../lib/useColorMode";
+import {Header} from "./Header/Header";
 
 
 function App() {
-    const status = useAppSelector<RequestStatusType>(statusSelector)
-    const isLoggedIn = useAppSelector<boolean>(isLoggedInAppSelector)
+    // const status = useAppSelector<RequestStatusType>(statusSelector)
+    // const isLoggedIn = useAppSelector<boolean>(isLoggedInAppSelector)
     const isInitialized = useAppSelector<boolean>(isInitializedSelector)
 
     const {initializeApp: initializeAppThunk, logout: logoutThunk} = useActions(authThunks)
     const {theme, colorMode} = useColorMode()
-
     useEffect(() => {
         initializeAppThunk()
     }, [])
-
-    const logOutHandler = () => {
-        logoutThunk()
-    }
 
     if (!isInitialized) {
         return <div
@@ -52,19 +48,7 @@ function App() {
             <CssBaseline/>
             <div className="App">
                 <ErrorSnackbar/>
-                <AppBar position="static">
-                    <Toolbar>
-                        <IconButton sx={{ml: 1}} onClick={colorMode.toggleColorMode} color="inherit">
-                            {theme.palette.mode === 'dark' ? <Brightness7Icon/> : <Brightness4Icon/>}
-                        </IconButton>
-                        <Typography variant="h6">Todolist</Typography>
-                        {isLoggedIn ?
-                            <Button onClick={logOutHandler} color="inherit"><LogoutIcon/></Button>
-                            : <div className="placeholder"></div>
-                        }
-                    </Toolbar>
-                    {status === 'loading' && <LinearProgress/>}
-                </AppBar>
+                <Header colorMode={colorMode} theme={theme}/>
                 <Container fixed>
                     <Routes>
                         <Route path="/404" element={<h1>404: Page NOT FOUND</h1>}/>

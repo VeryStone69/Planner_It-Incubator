@@ -11,7 +11,7 @@ export const useColorMode = () => {
             toggleColorMode: () => {
                 setMode((prevMode) => {
                     const newMode = prevMode === 'light' ? 'dark' : 'light';
-                    localStorage.setItem('colorMode', newMode); // Сохранение новой темы в Local Storage
+                    localStorage.setItem('colorMode', newMode);
                     return newMode;
                 });
             },
