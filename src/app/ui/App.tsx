@@ -6,7 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import {createTheme, ThemeProvider} from "@mui/material";
+import {ThemeProvider} from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
 import LinearProgress from "@mui/material/LinearProgress";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -22,36 +22,21 @@ import {RequestStatusType} from "../model/app-reducer";
 import {statusSelector, isInitializedSelector, isLoggedInAppSelector} from "../model/app.selector";
 import {useActions} from "../../common/hooks/useActions";
 import LogoutIcon from '@mui/icons-material/Logout';
+import {useColorMode} from "../lib/useColorMode";
 
 
 function App() {
     const status = useAppSelector<RequestStatusType>(statusSelector)
     const isLoggedIn = useAppSelector<boolean>(isLoggedInAppSelector)
     const isInitialized = useAppSelector<boolean>(isInitializedSelector)
+
     const {initializeApp: initializeAppThunk, logout: logoutThunk} = useActions(authThunks)
-    const [mode, setMode] = React.useState<'light' | 'dark'>('light');
+    const {theme, colorMode} = useColorMode()
 
     useEffect(() => {
         initializeAppThunk()
     }, [])
 
-    const colorMode = React.useMemo(
-        () => ({
-            toggleColorMode: () => {
-                setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
-            },
-        }),
-        [],);
-
-    const theme = React.useMemo(
-        () =>
-            createTheme({
-                palette: {
-                    mode,
-                },
-            }),
-        [mode],
-    );
     const logOutHandler = () => {
         logoutThunk()
     }
@@ -72,12 +57,11 @@ function App() {
                         <IconButton sx={{ml: 1}} onClick={colorMode.toggleColorMode} color="inherit">
                             {theme.palette.mode === 'dark' ? <Brightness7Icon/> : <Brightness4Icon/>}
                         </IconButton>
-                        <Typography variant="h6">
-                            Todolist
-                        </Typography>
+                        <Typography variant="h6">Todolist</Typography>
                         {isLoggedIn ?
                             <Button onClick={logOutHandler} color="inherit"><LogoutIcon/></Button>
-                            : <div className="placeholder"></div>}
+                            : <div className="placeholder"></div>
+                        }
                     </Toolbar>
                     {status === 'loading' && <LinearProgress/>}
                 </AppBar>
