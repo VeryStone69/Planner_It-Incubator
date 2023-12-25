@@ -13,14 +13,14 @@ import {RequestStatusType} from "../../model/app-reducer";
 import {isLoggedInAppSelector, statusSelector} from "../../model/app.selector";
 import {useActions} from "../../../common/hooks/useActions";
 import {authThunks} from "../../../features/auth/model/auth-reducer";
-import {Theme} from "@mui/material";
+import {Theme} from "@mui/material/styles";
 
-type ColorMode = {
+type ColorModeType = {
     toggleColorMode: () => void;
 }
 
 type PropsType = {
-    colorMode: ColorMode
+    colorMode: ColorModeType
     theme: Theme
 }
 export const Header = (props: PropsType) => {

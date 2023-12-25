@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: useColorMode.ts - add local storage">
-      <change afterPath="$PROJECT_DIR$/src/app/ui/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/useColorMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/useColorMode.ts" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="decomposition: add Header.tsx">
       <change beforePath="$PROJECT_DIR$/src/app/ui/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/Header/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,15 +194,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="55102000" />
-    </task>
-    <task id="LOCAL-00025" summary="update: app-reducer.tsx: add redux toolkit">
-      <option name="closed" value="true" />
-      <created>1699987432353</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1699987432353</updated>
+      <workItem from="1703329542894" duration="55326000" />
     </task>
     <task id="LOCAL-00026" summary="update: task-reducer.tsx, bugfix in Todolist.tsx">
       <option name="closed" value="true" />
@@ -591,14 +580,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703532461172</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="decomposition: add Header.tsx">
+      <option name="closed" value="true" />
+      <created>1703536110684</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1703536110684</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: comments for utils" />
     <MESSAGE value="add: tests for app-reducer" />
     <MESSAGE value="add: tests for task-reducer" />
     <MESSAGE value="add: tests for todolist-reducer" />
@@ -623,7 +619,8 @@
     <MESSAGE value="decomposition App, delete MenuIcon, add logout icon" />
     <MESSAGE value="add: custom hook useColorMode.ts" />
     <MESSAGE value="update: useColorMode.ts - add local storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: useColorMode.ts - add local storage" />
+    <MESSAGE value="decomposition: add Header.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="decomposition: add Header.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
