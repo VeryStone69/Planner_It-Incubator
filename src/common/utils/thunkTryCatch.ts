@@ -1,7 +1,6 @@
-import {BaseThunkAPI} from "@reduxjs/toolkit/dist/createAsyncThunk";
-import {AppDispatch, AppRootStateType} from "../../app/store";
-import {BaseResponseType} from "../types";
-import {handleServerNetworkError} from "./handle-server-network-error";
+// import {BaseThunkAPI} from "@reduxjs/toolkit/dist/createAsyncThunk";
+// import {BaseResponseType} from "../types";
+// import {handleServerNetworkError} from "./handle-server-network-error";
 
 /**
  * @template T - The type of the return value of the logic function.
@@ -14,16 +13,16 @@ import {handleServerNetworkError} from "./handle-server-network-error";
  *
  * @see {@link https://redux-toolkit.js.org/api/createAsyncThunk|Redux Toolkit: createAsyncThunk}
  */
-export const thunkTryCatch = async <T>(
-    thunkAPI: BaseThunkAPI<AppRootStateType, unknown, AppDispatch, null | BaseResponseType>,
-    logic: () => Promise<T>
-): Promise<T | ReturnType<typeof thunkAPI.rejectWithValue>> => {
-    const {dispatch, rejectWithValue} = thunkAPI;
-    try {
-        return await logic();
-    }
-        catch (e) {
-        handleServerNetworkError(e, dispatch);
-        return rejectWithValue(null);
-    }
-};
+// export const thunkTryCatch = async <T>(
+//     thunkAPI: BaseThunkAPI<AppRootStateType, unknown, AppDispatch, null | BaseResponseType>,
+//     logic: () => Promise<T>
+// ): Promise<T | ReturnType<typeof thunkAPI.rejectWithValue>> => {
+//     const {dispatch, rejectWithValue} = thunkAPI;
+//     try {
+//         return await logic();
+//     }
+//         catch (e) {
+//         handleServerNetworkError(e, dispatch);
+//         return rejectWithValue(null);
+//     }
+// };

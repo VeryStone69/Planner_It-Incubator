@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring error handling">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="refactoring all reducers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-app-error.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/handle-server-network-error.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/thunkTryCatch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/thunkTryCatch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/app-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/app-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/task-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/task-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/todolist-task.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/todolist-task.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +55,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.correct error message should be set.executor": "Run",
+    "Jest.correct status should be set.executor": "Run",
+    "Jest.empty arrays should be added when we set todolists.executor": "Run",
+    "Jest.new array should be added when new todolist is added.executor": "Run",
+    "Jest.property with todolistId should be deleted.executor": "Run",
+    "Jest.status of specified task should be changed.executor": "Run",
+    "Jest.tasks should be added for todolist.executor": "Run",
+    "Jest.title of specified task should be changed.executor": "Run",
     "Jest.todolist-reducer.test.ts.executor": "Run",
     "Jest.todolist-task.test.ts.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -78,61 +96,74 @@
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\auth\ui" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
-    <configuration name="task-reducer.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.tasks should be added for todolist">
+    <configuration name="empty arrays should be added when we set todolists" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST_FILE" />
+      <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <test-names>
+        <test-name value="empty arrays should be added when we set todolists" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="todolist-reducer.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="new array should be added when new todolist is added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/tests/todolist-reducer.test.ts" />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <test-names>
+        <test-name value="new array should be added when new todolist is added" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="todolist-task.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="property with todolistId should be deleted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/tests/todolist-task.test.ts" />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <test-names>
+        <test-name value="property with todolistId should be deleted" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="deploy" />
-      </scripts>
+    <configuration name="tasks should be added for todolist" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <test-names>
+        <test-name value="tasks should be added for todolist" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+    <configuration name="title of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <test-names>
+        <test-name value="title of specified task should be changed" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="Jest.todolist-task.test.ts" />
-        <item itemvalue="Jest.todolist-reducer.test.ts" />
-        <item itemvalue="Jest.task-reducer.test.ts" />
+        <item itemvalue="Jest.tasks should be added for todolist" />
+        <item itemvalue="Jest.empty arrays should be added when we set todolists" />
+        <item itemvalue="Jest.property with todolistId should be deleted" />
+        <item itemvalue="Jest.new array should be added when new todolist is added" />
+        <item itemvalue="Jest.title of specified task should be changed" />
       </list>
     </recent_temporary>
   </component>
@@ -174,15 +205,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="40050000" />
-    </task>
-    <task id="LOCAL-00017" summary="create: component Login.tsx">
-      <option name="closed" value="true" />
-      <created>1698870954310</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1698870954310</updated>
+      <workItem from="1703329542894" duration="43091000" />
     </task>
     <task id="LOCAL-00018" summary="add: routing, 404, login page">
       <option name="closed" value="true" />
@@ -568,15 +591,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703456129290</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="refactoring">
+      <option name="closed" value="true" />
+      <created>1703456816099</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1703456816099</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: initializeApp in auth-reducer.ts" />
-    <MESSAGE value="update: store.ts (new types for store,dispatch)" />
     <MESSAGE value="update: types" />
     <MESSAGE value="update: refactoring (add thunkTryCatch.ts and update auth-reducer.ts, tasks-reducer.ts)" />
     <MESSAGE value="update: todolists-reducer.ts" />
@@ -600,7 +629,9 @@
     <MESSAGE value="refactoring app-reducer.tsx" />
     <MESSAGE value="refactoring auth-reducer.tsx: add isAnyOf" />
     <MESSAGE value="refactoring error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring error handling" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="refactoring all reducers" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring all reducers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -654,12 +685,6 @@
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/todolists.selector.ts</url>
           <line>2</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/features/TodolistsList/model/todolists-reducer.ts</url>
-          <line>49</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,7 +1,7 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from 'react';
+import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
-import { AddBox } from '@mui/icons-material';
+import {AddBox} from '@mui/icons-material';
 import {RequestStatusType} from "../../../app/app-reducer";
 import {BaseResponseType} from "../../types";
 
@@ -15,21 +15,13 @@ export const AddItemForm = React.memo(function (props: AddItemFormPropsType) {
     let [title, setTitle] = useState('')
     let [error, setError] = useState<string | null>(null)
 
-    // const addItemHandler = () => {
-    //     if (title.trim() !== '') {
-    //         props.addItem(title);
-    //         setTitle('');
-    //     } else {
-    //         setError('Title is required');
-    //     }
-    // }
     const addItemHandler = () => {
         if (title.trim() !== '') {
             props.addItem(title)
                 .then((res) => {
                     setTitle('');
                 })
-                .catch((err:BaseResponseType) => {
+                .catch((err: BaseResponseType) => {
                     if (err?.resultCode) {
                         setError(err.messages[0]);
                     }
