@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: package.json">
-      <change afterPath="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: unit tests for auth-reducer">
+      <change afterPath="$PROJECT_DIR$/src/common/components/NotFoundPage/img/error-404.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/NotFoundPage/NotFoundPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/NotFoundPage/NotFoundPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/NotFoundPage/NotFoundPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/NotFoundPage/NotFoundPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/NotFoundPage/svg/404.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,26 +90,14 @@
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\common\components\NotFoundPage\img" />
+      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\common\components" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\app\model" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\app\ui" />
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\ui\Todolist\Tasks" />
-      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\api\todolists" />
-      <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\api\tasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.auth-reducer.test.ts">
-    <configuration name="auth reducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" />
-      <test-names>
-        <test-name value="auth reducer" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.start">
     <configuration name="auth reducer.should handle login rejected" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -154,13 +146,23 @@
       <test-file value="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.auth-reducer.test.ts" />
         <item itemvalue="Jest.auth reducer.should handle login rejected" />
         <item itemvalue="Jest.auth reducer.should handle logout" />
         <item itemvalue="Jest.auth reducer.should handle login" />
-        <item itemvalue="Jest.auth reducer" />
       </list>
     </recent_temporary>
   </component>
@@ -202,15 +204,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="65565000" />
-    </task>
-    <task id="LOCAL-00031" summary="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx">
-      <option name="closed" value="true" />
-      <created>1700853791596</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1700853791596</updated>
+      <workItem from="1703329542894" duration="67164000" />
     </task>
     <task id="LOCAL-00032" summary="update: refactoring error handling files">
       <option name="closed" value="true" />
@@ -596,14 +590,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703605643451</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="add: unit tests for auth-reducer">
+      <option name="closed" value="true" />
+      <created>1703608977520</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1703608977520</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring: delete callback updateTask" />
     <MESSAGE value="update: titleChangeHandler, changeTaskHandler in Task.tsx" />
     <MESSAGE value="update: change name function and add style Task.tsx" />
     <MESSAGE value="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx" />
@@ -628,7 +629,8 @@
     <MESSAGE value="update Routing.tsx, add: Header.module.css" />
     <MESSAGE value="add: NotFoundPage component" />
     <MESSAGE value="update: package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: package.json" />
+    <MESSAGE value="add: unit tests for auth-reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: unit tests for auth-reducer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

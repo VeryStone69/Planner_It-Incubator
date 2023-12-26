@@ -2,7 +2,7 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import {TodolistsList} from "../../../features/TodolistsList/ui/TodolistsList";
 import {Login} from "../../../features/auth/ui/Login";
 import React from "react";
-import {NotFoundPage} from "../NotFoundPage/NotFoundPage";
+import {NotFoundPage} from "../../../common/components/NotFoundPage/NotFoundPage";
 
 export const Routing = () => {
     const ROUTES = {
