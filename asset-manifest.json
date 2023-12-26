@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/TodoList_It-Incubator/static/css/main.55e97357.css",
-    "main.js": "/TodoList_It-Incubator/static/js/main.fdd5fd26.js",
+    "main.css": "/TodoList_It-Incubator/static/css/main.f1862009.css",
+    "main.js": "/TodoList_It-Incubator/static/js/main.ee33df99.js",
     "static/js/496.2d3ae432.chunk.js": "/TodoList_It-Incubator/static/js/496.2d3ae432.chunk.js",
+    "static/media/error-404.png": "/TodoList_It-Incubator/static/media/error-404.7147f1ef623862da1e0e.png",
     "index.html": "/TodoList_It-Incubator/index.html",
-    "main.55e97357.css.map": "/TodoList_It-Incubator/static/css/main.55e97357.css.map",
-    "main.fdd5fd26.js.map": "/TodoList_It-Incubator/static/js/main.fdd5fd26.js.map",
+    "main.f1862009.css.map": "/TodoList_It-Incubator/static/css/main.f1862009.css.map",
+    "main.ee33df99.js.map": "/TodoList_It-Incubator/static/js/main.ee33df99.js.map",
     "496.2d3ae432.chunk.js.map": "/TodoList_It-Incubator/static/js/496.2d3ae432.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55e97357.css",
-    "static/js/main.fdd5fd26.js"
+    "static/css/main.f1862009.css",
+    "static/js/main.ee33df99.js"
   ]
 }
