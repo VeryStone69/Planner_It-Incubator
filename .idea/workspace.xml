@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: NotFoundPage component">
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="update: package.json">
+      <change afterPath="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/NotFoundPage/NotFoundPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/NotFoundPage/NotFoundPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.auth reducer.executor": "Run",
+    "Jest.auth reducer.should handle initial state.executor": "Run",
+    "Jest.auth reducer.should handle login rejected.executor": "Run",
+    "Jest.auth reducer.should handle login.executor": "Run",
+    "Jest.auth reducer.should handle logout.executor": "Run",
+    "Jest.auth-reducer.test.ts.executor": "Run",
     "Jest.correct error message should be set.executor": "Run",
     "Jest.correct status should be set.executor": "Run",
     "Jest.empty arrays should be added when we set todolists.executor": "Run",
@@ -68,6 +73,7 @@
     "nodejs.jest.jest_package": "D:/itincubator/monday_with_IGOR/my-app/node_modules/react-scripts",
     "nodejs_package_manager_path": "yarn",
     "npm.deploy.executor": "Run",
+    "npm.predeploy.executor": "Run",
     "npm.start.executor": "Run",
     "settings.editor.selected.configurable": "preferences.fileTypes",
     "ts.external.directory.path": "D:\\itincubator\\monday_with_IGOR\\my-app\\node_modules\\typescript\\lib",
@@ -87,74 +93,74 @@
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\features\TodolistsList\api\tasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.tasks should be added for todolist">
-    <configuration name="empty arrays should be added when we set todolists" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.auth-reducer.test.ts">
+    <configuration name="auth reducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" />
       <test-names>
-        <test-name value="empty arrays should be added when we set todolists" />
+        <test-name value="auth reducer" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="new array should be added when new todolist is added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="auth reducer.should handle login rejected" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" />
       <test-names>
-        <test-name value="new array should be added when new todolist is added" />
+        <test-name value="auth reducer" />
+        <test-name value="should handle login rejected" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="property with todolistId should be deleted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="auth reducer.should handle login" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" />
       <test-names>
-        <test-name value="property with todolistId should be deleted" />
+        <test-name value="auth reducer" />
+        <test-name value="should handle login" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="tasks should be added for todolist" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="auth reducer.should handle logout" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" />
       <test-names>
-        <test-name value="tasks should be added for todolist" />
+        <test-name value="auth reducer" />
+        <test-name value="should handle logout" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="title of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="auth-reducer.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/task-reducer.test.ts" />
-      <test-names>
-        <test-name value="title of specified task should be changed" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.tasks should be added for todolist" />
-        <item itemvalue="Jest.empty arrays should be added when we set todolists" />
-        <item itemvalue="Jest.property with todolistId should be deleted" />
-        <item itemvalue="Jest.new array should be added when new todolist is added" />
-        <item itemvalue="Jest.title of specified task should be changed" />
+        <item itemvalue="Jest.auth-reducer.test.ts" />
+        <item itemvalue="Jest.auth reducer.should handle login rejected" />
+        <item itemvalue="Jest.auth reducer.should handle logout" />
+        <item itemvalue="Jest.auth reducer.should handle login" />
+        <item itemvalue="Jest.auth reducer" />
       </list>
     </recent_temporary>
   </component>
@@ -196,15 +202,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="62303000" />
-    </task>
-    <task id="LOCAL-00030" summary="update: addTask in task-reducer, update: addTask in TodolistsList.tsx">
-      <option name="closed" value="true" />
-      <created>1700846132126</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1700846132126</updated>
+      <workItem from="1703329542894" duration="65565000" />
     </task>
     <task id="LOCAL-00031" summary="update: updateTask in task-reducer, update: updateTask in TodolistsList.tsx">
       <option name="closed" value="true" />
@@ -590,14 +588,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703542480377</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="update: package.json">
+      <option name="closed" value="true" />
+      <created>1703605643451</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1703605643451</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring: delete callback changeStatus" />
     <MESSAGE value="refactoring: delete callback updateTask" />
     <MESSAGE value="update: titleChangeHandler, changeTaskHandler in Task.tsx" />
     <MESSAGE value="update: change name function and add style Task.tsx" />
@@ -622,7 +627,8 @@
     <MESSAGE value="decomposition: add Routing.tsx" />
     <MESSAGE value="update Routing.tsx, add: Header.module.css" />
     <MESSAGE value="add: NotFoundPage component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: NotFoundPage component" />
+    <MESSAGE value="update: package.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: package.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
