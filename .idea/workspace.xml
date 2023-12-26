@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: unit tests for auth-reducer">
-      <change afterPath="$PROJECT_DIR$/src/common/components/NotFoundPage/img/error-404.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/NotFoundPage/NotFoundPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/NotFoundPage/NotFoundPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/NotFoundPage/NotFoundPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/NotFoundPage/NotFoundPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/NotFoundPage/svg/404.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/Routing/Routing.tsx" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: image for error 404">
+      <change beforePath="$PROJECT_DIR$/src/common/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,15 +199,7 @@
       <workItem from="1702543913047" duration="1381000" />
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
-      <workItem from="1703329542894" duration="67164000" />
-    </task>
-    <task id="LOCAL-00032" summary="update: refactoring error handling files">
-      <option name="closed" value="true" />
-      <created>1700854400778</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1700854400778</updated>
+      <workItem from="1703329542894" duration="67330000" />
     </task>
     <task id="LOCAL-00033" summary="update: refactoring hooks">
       <option name="closed" value="true" />
@@ -598,14 +585,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703608977520</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="add: image for error 404">
+      <option name="closed" value="true" />
+      <created>1703610688065</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1703610688065</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: titleChangeHandler, changeTaskHandler in Task.tsx" />
     <MESSAGE value="update: change name function and add style Task.tsx" />
     <MESSAGE value="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx" />
     <MESSAGE value="decomposition and refactoring: add FilterTasksButton.tsx" />
@@ -630,7 +624,8 @@
     <MESSAGE value="add: NotFoundPage component" />
     <MESSAGE value="update: package.json" />
     <MESSAGE value="add: unit tests for auth-reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: unit tests for auth-reducer" />
+    <MESSAGE value="add: image for error 404" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: image for error 404" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
