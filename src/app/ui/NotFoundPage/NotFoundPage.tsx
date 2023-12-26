@@ -8,23 +8,25 @@ import Box from '@mui/material/Box';
 // import error404 from "./svg/404.svg"
 
 export const NotFoundPage = () => {
-    return (
-        <Container>
-            {/*<div className={s.wrapper}>*/}
-            {/*    <img src={error404} alt={'404'} className={s.error404}/>*/}
-            {/*</div>*/}
-            <Box sx={{textAlign: 'center', marginTop: 8}}>
-                <Typography variant="h3" component="h1" gutterBottom>
-                    404: Страница не найдена
-                </Typography>
-                <Typography variant="body1" gutterBottom>
-                    Извините, страница, которую вы ищете, не существует или была перемещена.
-                </Typography>
-                <Button variant="contained" color="primary" component={Link} to="/">
-                    Вернуться на главную страницу
-                </Button>
-            </Box>
-        </Container>
+    return (<>
+            <Container>
+                {/*<div className={s.wrapper}>*/}
+                {/*    <img src={error404} alt={'404'}/>*/}
+                {/*</div>*/}
+                <Box sx={{textAlign: 'center', marginTop: 8}}>
+                    <Typography variant="h3" component="h1" gutterBottom>
+                        404: Страница не найдена
+                    </Typography>
+                    <Typography variant="body1" gutterBottom>
+                        Извините, страница, которую вы ищете, не существует или была перемещена.
+                    </Typography>
+                    <Button variant="contained" color="primary" component={Link} to="/">
+                        Вернуться на главную страницу
+                    </Button>
+                </Box>
+            </Container>
+    </>
+
     );
 }
 
