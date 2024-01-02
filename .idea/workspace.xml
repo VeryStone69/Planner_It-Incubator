@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: image for error 404">
-      <change beforePath="$PROJECT_DIR$/src/common/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/index.ts" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: export NotFoundPage in index.ts">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,44 +42,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Jest.auth reducer.executor": "Run",
-    "Jest.auth reducer.should handle initial state.executor": "Run",
-    "Jest.auth reducer.should handle login rejected.executor": "Run",
-    "Jest.auth reducer.should handle login.executor": "Run",
-    "Jest.auth reducer.should handle logout.executor": "Run",
-    "Jest.auth-reducer.test.ts.executor": "Run",
-    "Jest.correct error message should be set.executor": "Run",
-    "Jest.correct status should be set.executor": "Run",
-    "Jest.empty arrays should be added when we set todolists.executor": "Run",
-    "Jest.new array should be added when new todolist is added.executor": "Run",
-    "Jest.property with todolistId should be deleted.executor": "Run",
-    "Jest.status of specified task should be changed.executor": "Run",
-    "Jest.tasks should be added for todolist.executor": "Run",
-    "Jest.title of specified task should be changed.executor": "Run",
-    "Jest.todolist-reducer.test.ts.executor": "Run",
-    "Jest.todolist-task.test.ts.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/itincubator/monday_with_IGOR/my-app/src/app/ui/NotFoundPage/svg",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "D:/itincubator/monday_with_IGOR/my-app/node_modules/react-scripts",
-    "nodejs_package_manager_path": "yarn",
-    "npm.deploy.executor": "Run",
-    "npm.predeploy.executor": "Run",
-    "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "ts.external.directory.path": "D:\\itincubator\\monday_with_IGOR\\my-app\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Jest.auth reducer.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.auth reducer.should handle initial state.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.auth reducer.should handle login rejected.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.auth reducer.should handle login.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.auth reducer.should handle logout.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.auth-reducer.test.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.correct error message should be set.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.correct status should be set.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.empty arrays should be added when we set todolists.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.new array should be added when new todolist is added.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.property with todolistId should be deleted.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.status of specified task should be changed.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.tasks should be added for todolist.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.title of specified task should be changed.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.todolist-reducer.test.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.todolist-task.test.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/itincubator/monday_with_IGOR/my-app/src/app/ui/NotFoundPage/svg&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/itincubator/monday_with_IGOR/my-app/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;npm.deploy.executor&quot;: &quot;Run&quot;,
+    &quot;npm.predeploy.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\itincubator\\monday_with_IGOR\\my-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\itincubator\monday_with_IGOR\my-app\src\app\ui\NotFoundPage\svg" />
@@ -200,6 +201,7 @@
       <workItem from="1702762232233" duration="7326000" />
       <workItem from="1703329425436" duration="33000" />
       <workItem from="1703329542894" duration="67330000" />
+      <workItem from="1704111871961" duration="3205000" />
     </task>
     <task id="LOCAL-00033" summary="update: refactoring hooks">
       <option name="closed" value="true" />
