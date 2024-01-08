@@ -3,11 +3,13 @@ import {authReducer, authThunks} from "../features/auth/model/auth-reducer";
 describe('auth reducer', () => {
     let initialState = {
         isLoggedIn: false,
+        captchaUrl: null
     };
 
     beforeEach(() => {
         initialState = {
             isLoggedIn: false,
+            captchaUrl: null
         };
     });
 
@@ -31,7 +33,7 @@ describe('auth reducer', () => {
     test('should handle logout', () => {
         const action = authThunks.logout
             .fulfilled({isLoggedIn: false}, 'requestId', undefined);
-        const endState = authReducer({isLoggedIn: true}, action);
+        const endState = authReducer({isLoggedIn: true,captchaUrl: null}, action);
         expect(endState).toEqual({isLoggedIn: false});
     });
 

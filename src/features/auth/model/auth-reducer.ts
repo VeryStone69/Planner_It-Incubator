@@ -8,7 +8,8 @@ import {createAppAsyncThunk} from "../../../common/utils";
 const slice = createSlice({
     name: "auth",
     initialState: {
-        isLoggedIn: false
+        isLoggedIn: false,
+        captchaUrl:null
     },
     reducers: {},
     extraReducers: (builder) => {
@@ -20,7 +21,6 @@ const slice = createSlice({
                 }
             )
     }
-
 })
 
 const login = createAppAsyncThunk<{ isLoggedIn: boolean }, LoginDataType>(
