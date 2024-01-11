@@ -3,13 +3,13 @@ import {authReducer, authThunks} from "../features/auth/model/auth-reducer";
 describe('auth reducer', () => {
     let initialState = {
         isLoggedIn: false,
-        captchaUrl: null
+        captchaUrl: ""
     };
 
     beforeEach(() => {
         initialState = {
             isLoggedIn: false,
-            captchaUrl: null
+            captchaUrl: ""
         };
     });
 
@@ -22,10 +22,11 @@ describe('auth reducer', () => {
     test('should handle login', () => {
         const action = authThunks.login
             .fulfilled({isLoggedIn: true}, 'requestId', {
-            email: 'free@samuraijs.com',
-            password: 'free',
-            rememberMe: true
-        });
+                email: 'free@samuraijs.com',
+                password: 'free',
+                rememberMe: true,
+                captcha: null
+            });
         const endState = authReducer(initialState, action);
         expect(endState).toEqual({isLoggedIn: true});
     });
@@ -33,7 +34,7 @@ describe('auth reducer', () => {
     test('should handle logout', () => {
         const action = authThunks.logout
             .fulfilled({isLoggedIn: false}, 'requestId', undefined);
-        const endState = authReducer({isLoggedIn: true,captchaUrl: null}, action);
+        const endState = authReducer({isLoggedIn: true, captchaUrl: ""}, action);
         expect(endState).toEqual({isLoggedIn: false});
     });
 
@@ -41,7 +42,8 @@ describe('auth reducer', () => {
         const action = authThunks.login.rejected(null, 'requestId', {
             email: 'free@samuraijs.com',
             password: 'wrong',
-            rememberMe: false
+            rememberMe: false,
+            captcha: null
         });
         const endState = authReducer(initialState, action);
         expect(endState).toEqual({isLoggedIn: false});

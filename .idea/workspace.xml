@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: basename for browser router">
-      <change afterPath="$PROJECT_DIR$/src/features/auth/api/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/auth/api/security-api.ts" afterDir="false" />
+    <list default="true" id="a11cfa03-859c-46a3-9a8f-2c79b7adc35d" name="Changes" comment="add: captcha in Login.tsx, useLogin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/api/common-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/api/common-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/app.selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/app.selector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/api/auth-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/api/auth-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/lib/useLogin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/lib/useLogin.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/ui/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/auth-reducer.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,15 +204,7 @@
       <workItem from="1703329425436" duration="33000" />
       <workItem from="1703329542894" duration="67330000" />
       <workItem from="1704111871961" duration="4434000" />
-      <workItem from="1704304983908" duration="11468000" />
-    </task>
-    <task id="LOCAL-00034" summary="update: refactoring the folder structure in the project">
-      <option name="closed" value="true" />
-      <created>1700861138387</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1700861138387</updated>
+      <workItem from="1704304983908" duration="19846000" />
     </task>
     <task id="LOCAL-00035" summary="update: removeTask in task-reducer.ts">
       <option name="closed" value="true" />
@@ -597,15 +590,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704214298730</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="add: captcha api, captcha in state, debugging tests">
+      <option name="closed" value="true" />
+      <created>1704735862087</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1704735862087</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: delete callback in TodolistsList.tsx and move function in Todolist.tsx" />
-    <MESSAGE value="decomposition and refactoring: add FilterTasksButton.tsx" />
     <MESSAGE value="decomposition and refactoring: add Tasks.tsx" />
     <MESSAGE value="decomposition and refactoring: add TodolistTitle.tsx" />
     <MESSAGE value="refactoring thunkTryCatch.ts and add addMatcher in app-reducer.tsx" />
@@ -629,7 +628,9 @@
     <MESSAGE value="add: unit tests for auth-reducer" />
     <MESSAGE value="add: image for error 404" />
     <MESSAGE value="add: basename for browser router" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: basename for browser router" />
+    <MESSAGE value="add: captcha api, captcha in state, debugging tests" />
+    <MESSAGE value="add: captcha in Login.tsx, useLogin" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: captcha in Login.tsx, useLogin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,6 +684,12 @@
           <url>file://$PROJECT_DIR$/src/features/TodolistsList/ui/Todolist/todolists.selector.ts</url>
           <line>2</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/auth/model/auth-reducer.ts</url>
+          <line>57</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

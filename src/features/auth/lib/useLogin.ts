@@ -3,21 +3,25 @@ import {authThunks} from "../model/auth-reducer";
 import {useFormik} from "formik";
 import {useAppSelector} from "../../../app/store";
 import {isLoggedInLoginSelector} from "../model/auth-selector";
+import {captchaSelector} from "../../../app/model/app.selector";
 
 type FormikErrorType = {
     email?: string
     password?: string
     rememberMe?: boolean
+    captcha?:string|null
 }
 
 export const useLogin = () =>{
     const isLoggedIn = useAppSelector<boolean>(isLoggedInLoginSelector)
+    const captcha = useAppSelector<string|null>(captchaSelector)
     const {login: loginThunk} = useActions(authThunks)
     const formik = useFormik({
         initialValues: {
             email: "free@samuraijs.com",
             password: "free",
-            rememberMe: false
+            rememberMe: false,
+            captcha: null
         },
         validate: (values) => {
             const errors: FormikErrorType = {}
@@ -37,5 +41,5 @@ export const useLogin = () =>{
             loginThunk(values)
         },
     })
-    return {formik, isLoggedIn}
+    return {formik, isLoggedIn,captcha}
 }

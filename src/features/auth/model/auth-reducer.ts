@@ -3,33 +3,60 @@ import {clearTodolistsAndTasks} from "../../../common/actions/common.actions";
 import {authAPI, LoginDataType} from "../api/auth-api";
 import {ResultCode} from "../../../common/enums/common-enums";
 import {createAppAsyncThunk} from "../../../common/utils";
+import {securityApi} from "../api/security-api";
 
 
 const slice = createSlice({
     name: "auth",
     initialState: {
         isLoggedIn: false,
-        captchaUrl:null
+        captchaUrl:""
     },
     reducers: {},
     extraReducers: (builder) => {
         builder
+            .addCase(getCaptchaUrl.fulfilled, (state, action) => {
+                state.captchaUrl=action.payload
+            })
             .addMatcher(
                 isAnyOf(authThunks.login.fulfilled, authThunks.logout.fulfilled, authThunks.initializeApp.fulfilled),
                 (state, action) => {
                     state.isLoggedIn = action.payload.isLoggedIn
                 }
             )
+
     }
 })
 
+const getCaptchaUrl= createAppAsyncThunk<string>(
+    `${slice.name}/captcha`,
+    async ()=>{
+        const res = await securityApi.getCaptchaUrl()
+            return res.data.url
+    }
+)
+
+// const login = createAppAsyncThunk<{ isLoggedIn: boolean }, LoginDataType>(
+//     `${slice.name}/login`,
+//     async (arg, {rejectWithValue}) => {
+//         const res = await authAPI.login(arg)
+//         if (res.data.resultCode === ResultCode.Success) {
+//             return {isLoggedIn: true}
+//         } else {
+//             return rejectWithValue(res.data);
+//         }
+//     });
 const login = createAppAsyncThunk<{ isLoggedIn: boolean }, LoginDataType>(
     `${slice.name}/login`,
-    async (arg, {rejectWithValue}) => {
+    async (arg, thunkAPI) => {
+        const {dispatch, rejectWithValue} = thunkAPI;
         const res = await authAPI.login(arg)
         if (res.data.resultCode === ResultCode.Success) {
             return {isLoggedIn: true}
-        } else {
+        }else if(res.data.resultCode === ResultCode.Captcha){
+            dispatch(getCaptchaUrl())
+            return rejectWithValue(res.data);
+        }else {
             return rejectWithValue(res.data);
         }
     });

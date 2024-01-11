@@ -13,8 +13,7 @@ import s from "./Login.module.css"
 
 
 export const Login = () => {
-
-    const {formik, isLoggedIn} = useLogin()
+    const {formik, isLoggedIn,captcha} = useLogin()
     if (isLoggedIn) {
         return <Navigate to={"/"}/>
     }
@@ -52,6 +51,12 @@ export const Login = () => {
                                               checked={formik.values.rememberMe}
                                               {...formik.getFieldProps('rememberMe')}
                                           />}/>
+                        {!!captcha&&<div><img src={`${captcha}`} alt={"Antibot symbols"}/></div>}
+                        {!!captcha && <div>
+                            <TextField placeholder={"Symbols from image"} name={"captcha"}
+                                   type="text" value={formik.values.captcha} onChange={formik.handleChange}/>
+                        </div>}
+
                         <Button type={'submit'}
                                 variant={'contained'}
                                 color={'primary'}
@@ -60,6 +65,7 @@ export const Login = () => {
                         </Button>
                     </FormGroup>
                 </FormControl>
+
             </form>
         </Grid>
     </Grid>
