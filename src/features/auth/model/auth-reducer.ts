@@ -36,16 +36,6 @@ const getCaptchaUrl= createAppAsyncThunk<string>(
     }
 )
 
-// const login = createAppAsyncThunk<{ isLoggedIn: boolean }, LoginDataType>(
-//     `${slice.name}/login`,
-//     async (arg, {rejectWithValue}) => {
-//         const res = await authAPI.login(arg)
-//         if (res.data.resultCode === ResultCode.Success) {
-//             return {isLoggedIn: true}
-//         } else {
-//             return rejectWithValue(res.data);
-//         }
-//     });
 const login = createAppAsyncThunk<{ isLoggedIn: boolean }, LoginDataType>(
     `${slice.name}/login`,
     async (arg, thunkAPI) => {
