@@ -3,3 +3,21 @@
     color: red;
     font-size: 21px;
 }
+.containerCaptchaImg {
+    border: 1px solid red;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 10px
+}
+
+.containerInputForCaptcha{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-sizing: content-box;
+
+}
+
+
+

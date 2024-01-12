@@ -51,10 +51,13 @@ export const Login = () => {
                                               checked={formik.values.rememberMe}
                                               {...formik.getFieldProps('rememberMe')}
                                           />}/>
-                        {!!captcha&&<div><img src={`${captcha}`} alt={"Antibot symbols"}/></div>}
-                        {!!captcha && <div>
+
+                        {!!captcha&&<div className={s.containerCaptchaImg}><img src={`${captcha}`} alt={"Antibot symbols"}/></div>}
+                        {!!captcha && <div className={s.containerInputForCaptcha}>
                             <TextField placeholder={"Symbols from image"} name={"captcha"}
-                                   type="text" value={formik.values.captcha} onChange={formik.handleChange}/>
+                                   type="text" value={formik.values.captcha} onChange={formik.handleChange}
+                                       sx={{ width: '100%' }}
+                            />
                         </div>}
 
                         <Button type={'submit'}
