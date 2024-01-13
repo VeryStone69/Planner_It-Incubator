@@ -54,6 +54,8 @@ export const Login = () => {
 
                         {!!captcha&&<div className={s.containerCaptchaImg}><img src={`${captcha}`} alt={"Antibot symbols"}/></div>}
                         {!!captcha && <div className={s.containerInputForCaptcha}>
+                            {formik.touched.captcha && formik.errors.captcha ?
+                                <div style={{color: "red"}}>{formik.errors.captcha}</div> : null}
                             <TextField placeholder={"Symbols from image"} name={"captcha"}
                                    type="text" value={formik.values.captcha} onChange={formik.handleChange}
                                        sx={{ width: '100%' }}

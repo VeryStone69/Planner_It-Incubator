@@ -21,7 +21,7 @@ describe('auth reducer', () => {
 
     test('should handle login', () => {
         const action = authThunks.login
-            .fulfilled({isLoggedIn: true}, 'requestId', {
+            .fulfilled({isLoggedIn: true,captchaUrl:""}, 'requestId', {
                 email: 'free@samuraijs.com',
                 password: 'free',
                 rememberMe: true,
@@ -33,7 +33,7 @@ describe('auth reducer', () => {
 
     test('should handle logout', () => {
         const action = authThunks.logout
-            .fulfilled({isLoggedIn: false}, 'requestId', undefined);
+            .fulfilled({isLoggedIn: false,captchaUrl:""}, 'requestId', undefined);
         const endState = authReducer({isLoggedIn: true, captchaUrl: ""}, action);
         expect(endState).toEqual({isLoggedIn: false});
     });
@@ -51,7 +51,7 @@ describe('auth reducer', () => {
 
     test('should handle app initialization when not logged in', () => {
         const action = authThunks.initializeApp
-            .fulfilled({isLoggedIn: false}, 'requestId', undefined);
+            .fulfilled({isLoggedIn: false,captchaUrl:""}, 'requestId', undefined);
         const endState = authReducer(initialState, action);
         expect(endState).toEqual({isLoggedIn: false});
     });

@@ -21,7 +21,7 @@ export const useLogin = () =>{
             email: "free@samuraijs.com",
             password: "free",
             rememberMe: false,
-            captcha: null
+            captcha: ""
         },
         validate: (values) => {
             const errors: FormikErrorType = {}
@@ -34,6 +34,9 @@ export const useLogin = () =>{
                 errors.password = "Required"
             } else if (values.password.length < 3) {
                 errors.password = "Less then 3 symbols"
+            }
+            if (captcha && !values.captcha) {
+                errors.captcha = "Captcha is required";
             }
             return errors
         },

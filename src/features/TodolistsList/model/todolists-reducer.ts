@@ -66,7 +66,6 @@ const removeTodolist = createAppAsyncThunk<{ id: string }, string>(
         if (res.data.resultCode === ResultCode.Success) {
             return {id};
         } else {
-            // handleServerAppError(res.data, dispatch);
             return rejectWithValue(res.data);
         }
 
