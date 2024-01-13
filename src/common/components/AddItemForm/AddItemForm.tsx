@@ -4,6 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import {AddBox} from '@mui/icons-material';
 import {RequestStatusType} from "../../../app/model/app-reducer";
 import {BaseResponseType} from "../../types";
+import s from "./AddItemForm.module.css"
 
 type PropsType = {
     addItem: (title: string) => Promise<unknown>
@@ -44,7 +45,7 @@ export const AddItemForm = React.memo(function (props: PropsType) {
         }
     }
 
-    return <div>
+    return <div >
         <TextField variant="outlined"
                    error={!!error}
                    value={title}
@@ -53,8 +54,8 @@ export const AddItemForm = React.memo(function (props: PropsType) {
                    label="Title"
                    helperText={error}
         />
-        <IconButton color="primary" onClick={addItemHandler} disabled={props.entityStatus === "loading"}>
-            <AddBox/>
+        <IconButton className={s.customIconButton} color="primary" onClick={addItemHandler} disabled={props.entityStatus === "loading"}>
+            <AddBox fontSize={"large"}/>
         </IconButton>
     </div>
 })

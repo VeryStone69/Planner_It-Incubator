@@ -36,10 +36,15 @@ export const TodolistsList = () => {
         return <Navigate to={"/login"}/>
     }
     return <>
-        <Grid container style={{padding: '20px'}}>
+        <Grid container style={{padding: '20px'}}
+              direction="row"
+              justifyContent="center"
+              alignItems="center">
             <AddItemForm addItem={addTodolistCallback}/>
         </Grid>
-        <Grid container spacing={3}>
+        <Grid container spacing={3} direction="row"
+              justifyContent="space-evenly"
+              alignItems="center">
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id]

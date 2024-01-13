@@ -9,6 +9,7 @@ import {FilterTasksButton} from "./FilterTasksButton/FilterTasksButton";
 import {Tasks} from "./Tasks/Tasks";
 import {TodolistTitle} from "./TodolistTitle/TodolistTitle";
 
+
 type PropsType = {
     id: string
     title: string
