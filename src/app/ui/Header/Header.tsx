@@ -37,7 +37,7 @@ export const Header = (props: PropsType) => {
             <IconButton sx={{ml: 1}} onClick={props.colorMode.toggleColorMode} color="inherit">
                 {props.theme.palette.mode === 'dark' ? <Brightness7Icon/> : <Brightness4Icon/>}
             </IconButton>
-            <Typography variant="h6">Todolist</Typography>
+            <Typography variant="h6">Planner</Typography>
             {isLoggedIn ?
                 <Button onClick={logOutHandler} color="inherit"><LogoutIcon/></Button>
                 : <div className={s.placeholder}></div>
