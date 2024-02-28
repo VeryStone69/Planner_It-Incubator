@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Planner_It-Incubator/static/css/main.a418d92b.css",
-    "main.js": "/Planner_It-Incubator/static/js/main.149436bb.js",
+    "main.js": "/Planner_It-Incubator/static/js/main.4aa27d38.js",
     "static/js/496.2d3ae432.chunk.js": "/Planner_It-Incubator/static/js/496.2d3ae432.chunk.js",
     "static/media/error-404.png": "/Planner_It-Incubator/static/media/error-404.7147f1ef623862da1e0e.png",
     "index.html": "/Planner_It-Incubator/index.html",
     "main.a418d92b.css.map": "/Planner_It-Incubator/static/css/main.a418d92b.css.map",
-    "main.149436bb.js.map": "/Planner_It-Incubator/static/js/main.149436bb.js.map",
+    "main.4aa27d38.js.map": "/Planner_It-Incubator/static/js/main.4aa27d38.js.map",
     "496.2d3ae432.chunk.js.map": "/Planner_It-Incubator/static/js/496.2d3ae432.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a418d92b.css",
-    "static/js/main.149436bb.js"
+    "static/js/main.4aa27d38.js"
   ]
 }
