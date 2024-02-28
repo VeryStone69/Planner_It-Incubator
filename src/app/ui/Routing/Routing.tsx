@@ -8,7 +8,7 @@ export const Routing = () => {
     const ROUTES = {
         HOME: '/',
         LOGIN: '/login',
-        TODO_LIST: '/TodoList_It-Incubator',
+        TODO_LIST: '/Planner_It-Incubator',
         NOT_FOUND: '/404',
     };
     return (
