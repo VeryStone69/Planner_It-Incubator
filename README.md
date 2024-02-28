@@ -1,5 +1,5 @@
 # Todolist Project
-<img src="./public/todolist.png" alt="app image" margin-left="300px" margin-right="auto"/>
+<img src="./public/planner.png" alt="app image" margin-left="300px" margin-right="auto"/>
 ## Описание
 
 Todolist - это веб-приложение для управления задачами, разработанное с использованием React и TypeScript. Этот проект использует Redux Toolkit для управления состоянием приложения и Material-UI для стильного интерфейса пользователя. Приложение также включает unit-тесты для обеспечения надежности кода.
