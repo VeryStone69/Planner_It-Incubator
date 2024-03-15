@@ -1,19 +1,19 @@
-# Todolist Project
+# Planner Project
 <img src="./public/planner.png" alt="app image" margin-left="300px" margin-right="auto"/>
-## Описание
+## Description
 
-Todolist - это веб-приложение для управления задачами, разработанное с использованием React и TypeScript. Этот проект использует Redux Toolkit для управления состоянием приложения и Material-UI для стильного интерфейса пользователя. Приложение также включает unit-тесты для обеспечения надежности кода.
+Planner is a web application for task management, developed using React and TypeScript. This project utilizes Redux Toolkit for state management of the application and Material-UI for a stylish user interface. The application also includes unit tests to ensure code reliability.
 
-## Основные функции
+## Key Features
 
-- Создание, редактирование и удаление задач и списков задач.
-- Фильтрация задач по различным критериям (например, активные, завершенные).
-- Аутентификация пользователей.
-- Отображение уведомлений об ошибках и состояниях загрузки.
-- Адаптивный и реактивный пользовательский интерфейс.
-- Изменение цветой схемы.
+- Creation, editing, and deletion of tasks and task lists.
+- Filtering of tasks by various criteria (for example, active, completed).
+- User authentication.
+- Display of error notifications and loading statuses.
+- Adaptive and responsive user interface.
+- Color scheme customization.
 
-## Технологии
+## Technologies
 
 - React
 - TypeScript
